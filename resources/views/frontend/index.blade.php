@@ -19,7 +19,7 @@
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
           {{-- <h1 class="display-3">Mysore Express</h1> --}}
-          <img src="frontend/images/mysore_express_logo.png" width="400" alt="">
+          {{-- <img src="frontend/images/mysore_express_logo.png" width="400" alt=""> --}}
           <p class="lead mb-0" id="header-caption"></p>
         </div>
       </div>
@@ -401,7 +401,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div data-scroll data-scroll-speed="0.5">
-                        <img src="frontend/images/Aakar2023Logo.png">
+                        <img src="frontend/images/logo2025.png">
                         
                         {{-- <video loop class="side-image" autoplay muted>
                             <source src="frontend/images/celebrateAakar.mp4" type="video/mp4">
@@ -414,9 +414,9 @@
                 <div class="col-lg-6">
                     <div data-scroll data-scroll-speed="-0.5">
                         <div class="side-content right light">
-                            <h3 class="countdownHeading">Celebrate<br>Aakar 2023 !!<br></h3>
-                            <p>Mark your calendars for the highly anticipated Aakar 2023 Inter-Collegiate Techno-Cultural
-                                Fest, taking place on March 24th, 2023 and March 25th, 2023. Join us for two unforgettable
+                            <h3 class="countdownHeading">Celebrate<br>Symphoria 2025 !!<br></h3>
+                            <p>Mark your calendars for the highly anticipated Symphoria 2025 Inter-Collegiate Techno-Cultural
+                                Fest, taking place on April 26th, 2025 and April 27th, 2025. Join us for two unforgettable
                                 days of innovation, culture, and entertainment!
                                 <br><br>We eagerly anticipate your presence and look forward to meeting you soon!
                             </p>
