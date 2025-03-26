@@ -1,6 +1,14 @@
 {
     "name": "laravel/laravel",
     "type": "project",
+    "authors": [
+        {
+            "name": "Darshan Bhandary",
+            "email": "drshnbhandary@gmail.com"
+        },{
+            "name": "Harshith J Poojary"
+        }
+    ],
     "description": "The Laravel Framework.",
     "keywords": [
         "framework",
