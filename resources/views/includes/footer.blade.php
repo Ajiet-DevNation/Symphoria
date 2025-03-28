@@ -28,9 +28,9 @@
   </div>
   <div class="bottom-bar">
     <div class="container"> 
-      <span class="copyright"> AJIET | Aakar</span>
+      <span class="copyright"> Dental College | AJIET</span>
       <span class="social-media">
-      <li><a href="https://www.instagram.com/aakar_2023/?hl=en"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
+      <li><a href="https://www.instagram.com/aj_mega_fest"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
     </span> <span class="creation">Site created by <a href="https://ajietdevnation.org/">AJIET DevNation</a></span> </div>
   </div>
 </footer>
