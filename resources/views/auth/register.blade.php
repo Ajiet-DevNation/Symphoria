@@ -165,7 +165,7 @@
                                             {{ old('pass_type') == 'AJIET' ? 'selected' : '' }}>AJIET Pass - Only for AJIET
                                             Students
                                         </option>
-                                    </select>
+                                    </select> 
                                     @error('pass_type')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

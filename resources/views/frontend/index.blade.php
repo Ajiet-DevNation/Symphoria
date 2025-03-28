@@ -123,16 +123,16 @@
                 <div class="col-lg-6">
                     <div data-scroll data-scroll-speed="-0.5">
                         <div class="side-content left">
-                            <h6>AAKAR 2023</h6>
+                            <h6>Symphoria 2025</h6>
                             <h2>Auroras of Adventure!</h2>
                             <p style="font-weight:normal">Set your sights on the horizon and join us as A J Institute of
-                                Engineering & Technology, Mangaluru proudly presents the fifth edition of its
-                                Intercollegiate Techno-Cultural Fest, "AJIET AAKAR-2023", with an enthralling theme of
+                                Dentak Sciences, Mangaluru proudly presents the fifth edition of its
+                                Intercollegiate Cultural Fest, "Symphoria 2025", with an enthralling theme of
                                 "Auroras of Adventure". Prepare for an extraordinary experience as we embark on this
-                                adventure on the 24<sup>th</sup> and 25<sup>th</sup> of March 2023, amidst the captivating
-                                backdrop of the AJIET Campus.<br><br>
-                                The theme "Auroras of Adventure" serves as the guiding beacon for AJIET AAKAR-2023,
-                                providing students with a platform to showcase their technical and cultural talents in a
+                                adventure on the 26<sup>th</sup> and 27<sup>th</sup> of April 2025, amidst the captivating
+                                backdrop of the AJIMS Campus.<br><br>
+                                The theme "Auroras of Adventure" serves as the guiding beacon for AJIMS SYMPHORIA-2025,
+                                providing students with a platform to showcase their cultural talents in a
                                 thrilling and adventurous environment. As participants, students will have the opportunity
                                 to receive constructive feedback from industry experts and a spirited audience, igniting
                                 their passion for adventure and inspiring them to push their limits further.
