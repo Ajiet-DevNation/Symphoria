@@ -18,7 +18,7 @@
                 <div class="col-12">
                     <div data-scroll data-scroll-speed="0.5">
                         <div class="section-title text-center">
-                            <h2 class="passHome" style="color: #43a872">Aakar 2023 Catalogue</h2>
+                            <h2 class="passHome" style="color: #43a872">Symphoria 2025 Catalogue</h2>
                         </div>
                         <!-- end section-title -->
                     </div>
@@ -29,6 +29,7 @@
                 {{-- <iframe allowfullscreen="allowfullscreen" class="fp-iframe" style="border: 1px solid lightgray; width: 80%; height:30rem ;" src="https://flipbookpdf.net/web/site/20ae392eee4189c652073101cd906e44692d619b202303.pdf.html"></iframe> --}}
                 {{-- <iframe src="https://publuu.com/flip-book/96773/265557/page/2?embed" width="70%" height="600rem"  frameborder="0" allowfullscreen="" class="publuuflip" scrolling="yes"></iframe> --}}
                 <iframe src="https://publuu.com/flip-book/832404/1835020" width="70%" height="600rem"  frameborder="0" allowfullscreen="" class="publuuflip" scrolling="yes"></iframe>
+                {{-- <iframe src="https://www.flipbookpdf.net/web/site/3c032a88acbf858332a96132115603cf18a2d5f7202503.pdf.html" width="900" height="637" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> --}}
             </div>
             <!-- end row -->
         </div>
@@ -42,7 +43,7 @@
                 <div class="col-12">
                     <div data-scroll data-scroll-speed="-0.5">
                         <div class="section-title text-center">
-                            <h2 style="color: #43a872">Welcome to AAKAR 2023!</h2>
+                            <h2 style="color: #43a872">Welcome to Symphoria 2025!</h2>
                             <h4>Auroras of Adventure!</h4>
                         </div>
                     </div>
@@ -50,13 +51,13 @@
                 <div class="col-lg-6">
                     <div data-scroll data-scroll-speed="0.5">
                         <div class="text-box">
-                            <h3 style="color: #123052">Learn more about AAKAR-2023</h3>
+                            <h3 style="color: #123052">Learn more about Symphoria-2023</h3>
                             <p style="font-weight:normal">
                                 We are thrilled to announce the fifth edition of the Intercollegiate Techno-Cultural Fest
-                                "AJIET AAKAR-2023", organized by A J Institute of Engineering & Technology. The fest is
+                                "AJIET Symphoria-2023", organized by A J Institute of Engineering & Technology. The fest is
                                 scheduled to take place on March 24<sup>th</sup> and 25<sup>th</sup>, 2023, at the
                                 prestigious AJIET Campus.
-                                <br><br>AJIET AAKAR-2023 promises to be an extraordinary platform for students to showcase
+                                <br><br>AJIET Symphoria-2023 promises to be an extraordinary platform for students to showcase
                                 their technical and cultural talents. Participants will have the opportunity to receive
                                 constructive feedback from industry experts and an enthusiastic audience, inspiring them to
                                 reach new heights in their pursuits. We look forward to your participation in this
@@ -94,7 +95,7 @@
                     <div class="col-12">
                         <div data-scroll data-scroll-speed="-0.5">
                             <div class="section-title text-center">
-                                <h6>Backbone of AAKAR</h6>
+                                <h6>Backbone of Symphoria</h6>
                                 <h2>Student Organizers</h2>
                             </div>
                         </div>
@@ -131,7 +132,7 @@
             <div class="col-12">
                 <div data-scroll data-scroll-speed="-0.5">
                     <div class="section-title text-center justify-content-center">
-                        <h6>Tech Team of AAKAR</h6>
+                        <h6>Tech Team of Symphoria</h6>
                         <h2>This Site is developed by</h2>
                         <img class="img-fluid" width="250" src="{{ asset('frontend/images/devnation.png') }}"
                             alt="" srcset="">
