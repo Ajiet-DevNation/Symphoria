@@ -27,7 +27,8 @@
                 <!-- end col-12 -->
                 {{-- <iframe src="https://flipbookpdf.net/web/site/20ae392eee4189c652073101cd906e44692d619b202303.pdf.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; margin-bottom:5px; max-width: 100%; overflow: hidden; width: 599px; height: 487px;" allowfullscreen></iframe> --}}
                 {{-- <iframe allowfullscreen="allowfullscreen" class="fp-iframe" style="border: 1px solid lightgray; width: 80%; height:30rem ;" src="https://flipbookpdf.net/web/site/20ae392eee4189c652073101cd906e44692d619b202303.pdf.html"></iframe> --}}
-                <iframe src="https://publuu.com/flip-book/96773/265557/page/2?embed" width="70%" height="600rem"  frameborder="0" allowfullscreen="" class="publuuflip" scrolling="yes"></iframe>
+                {{-- <iframe src="https://publuu.com/flip-book/96773/265557/page/2?embed" width="70%" height="600rem"  frameborder="0" allowfullscreen="" class="publuuflip" scrolling="yes"></iframe> --}}
+                <iframe src="https://publuu.com/flip-book/832404/1835020" width="70%" height="600rem"  frameborder="0" allowfullscreen="" class="publuuflip" scrolling="yes"></iframe>
             </div>
             <!-- end row -->
         </div>
