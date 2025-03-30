@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#43a872" />
   <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon" />
   <title>Symphoria | Auroras of Adventure</title>
-  <meta name="title" content="Aakar | Auroras of Adventure">
+  <meta name="title" content="Symphoria | Auroras of Adventure">
   <meta name="description" content="A fusion of technical, cultural, literary and gaming events, it's a place to showcase your talents and have an learning and enriching experience.">
   <meta name="keywords" content="Aakar, aakar, Akaar, akaar, AJIET, ajiet, AJ, aj, AJ institute of engineering and technology, cultural, technical, fest, engineering, cs, is, ec, civil, mech, events, event">
   <meta name="robots" content="index,follow">
