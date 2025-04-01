@@ -22,7 +22,7 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.0",
-        "league/flysystem-aws-s3-v3": "^3.0",
+        "league/flysystem-aws-s3-v3": "^3.29",
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
         "spatie/laravel-permission": "^5.5"
