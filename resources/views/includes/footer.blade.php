@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row pt-4">
       <div class="logo col-lg-3 pt-6"> 
-        <img src="{{asset('frontend/images/logo2023.webp')}}" alt="Image"> 
+        <img src="{{asset('frontend/images/logo2025.png')}}" alt="Image"> 
       </div>
       <div class="col-lg-3 col-md-6">
         <div style="margin: 2rem"class="footer-widget">
