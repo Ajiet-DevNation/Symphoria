@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('content')
-    <section style="background-color: #eee; ">
+    <section style="background-color: #eee; " class="mt-4">
         <div class="container p-5">
             <div class="row">
                 <div class="col">
@@ -32,7 +32,7 @@
                         <span></span><span></span>
                         @if (Auth::user()->uid)
                             <img
-                                src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={{ route('user_details', ['uid' => Auth::user()->uid]) }}" />
+                                src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={{ route('user_details', ['uid' => Auth::user()->uid]) }}" />
                         @endif
 
                     </div>
