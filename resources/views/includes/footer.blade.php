@@ -12,6 +12,7 @@
             575006</p>
         </div>
       </div>
+      
       <div class="col-lg-3 ">
         <div style="margin: 2rem" class="footer-widget">
           <h6 class="widget-title">Email Us</h6>
