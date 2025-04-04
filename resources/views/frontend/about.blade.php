@@ -101,10 +101,10 @@
                         </div>
                     </div>
                     @foreach ($organizers as $organizer)
-                        <div class="col-md-4 col-sm-6">
-                            <div data-scroll data-scroll-speed="0.5">
-                                <div class="speaker">
-                                    {{-- <figure> <img src="{{ $organizer->img ? Storage::url($organizer->img) : '' }}"
+                    <div class="col-lg-3 col-md-6">
+                        <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+                            <div class="speaker">
+                                <figure><img src="{{ $organizer->img ? Storage::url($organizer->img) : '' }}"
                                             alt="Image">
                                         <figcaption>
                                             <ul>
@@ -114,7 +114,7 @@
                                                             class="fa fa-phone"></i></a></li>
                                             </ul>
                                         </figcaption>
-                                    </figure> --}}
+                                    </figure>
                                     <div class="content-box">
                                         <h4>{{ $organizer->name }}</h4>
                                         <small>{{ $organizer->position }}</small>

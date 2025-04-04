@@ -7,11 +7,11 @@
 <header class="{{ $headerClass=" video" }}">
 
   <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-  <div class="overlay mb-4"></div>
-  <div class="overlay mb-4"></div>
+  <div class="overlay "></div>
+  <div class="overlay "></div>
 
   <!-- The HTML5 video element that will create the background video on the header -->
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="mt-4 mb-4">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="mt-4 mb-5 ">
     <source src="frontend/videos/mysore1.mp4" type="video/mp4">
   </video>
 
@@ -43,7 +43,7 @@
         <!-- end data-scroll -->
       </div>
       <!-- end col-12 -->
-      
+
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div data-scroll data-scroll-speed="-0.5">
           <div class="price-box">
@@ -114,7 +114,7 @@
 
     </div>
     <!-- end row -->
-  <!-- end container -->
+    <!-- end container -->
 </section>
 <section class="content-section">
   <span class="section-bg" data-background="{{ asset('frontend/images/section-bg01.png') }}" data-scroll
@@ -127,12 +127,13 @@
             <h6>Symphoria 2025</h6>
             <h2>Your Stage, Your Story!</h2>
             <p style="font-weight:normal">Set your sights on the horizon and join us as A J Institute of
-              Dentak Sciences, Mangaluru proudly presents the first edition of its
+              Dental Sciences, Kuntikana, Mangaluru proudly presents the first edition of its
               Intercollegiate Cultural Fest, "Symphoria 2025", with an enthralling theme of
               "Your Stage, Your Story". Prepare for an extraordinary experience as we embark on this
               adventure on the 26<sup>th</sup> and 27<sup>th</sup> of April 2025, amidst the captivating
-              backdrop of the AJIMS Campus.<br><br>
-              The theme "YOUR STAGE, YOUR STORY" serves as the guiding beacon for AJIMS SYMPHORIA-2025,
+              backdrop of the A J Institute of Dental Sciences Campus.<br><br>
+              The theme "YOUR STAGE, YOUR STORY" serves as the guiding beacon for A J Institute of Dental Sciences
+              SYMPHORIA-2025,
               providing students with a platform to showcase their talents in a
               thrilling and adventurous environment. As participants, students will have the opportunity
               to receive constructive feedback from experts and a spirited audience, igniting
@@ -151,6 +152,7 @@
     </div>
   </div>
 </section>
+
 {{-- <section class="content-section no-top-spacing">
   <div class="container">
     <div class="row justify-content-center">
@@ -406,6 +408,7 @@
   </div>
   <!-- end container -->
 </section>
+
 <!-- end content-section -->
 <section class="content-section left-white-bg" data-background="#43a872">
   <span class="section-bg" data-background="{{ asset('frontend/images/section-bg03.png') }}" data-scroll
@@ -471,5 +474,146 @@
   </div>
   <!-- end container -->
 </section>
+<section class="content-section">
+  <div class="section-bg" data-background="images/section-bg02.png" data-scroll data-scroll-speed="1"></div>
+  <!-- end section-bg -->
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-12">
+        <div data-scroll data-scroll-speed="0.5">
+          <div class="section-title text-center">
+            {{-- <figure><img src="images/title-shape.png" alt="Image"></figure> --}}
+            {{-- <h6>Our Sister Institutions</h6> --}}
+            <h2>Our Sister Institutions</h2>
+          </div>
+          <!-- end section-title -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-12 -->
+      {{-- <div class="col-12"> <strong class="sponsor-title">Main sponsors</strong> </div> --}}
+      <!-- end col-12 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Qonk</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Part Two</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Happytality</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="clearfix spacing-50"></div>
+      <!-- end clearfix -->
+      {{-- <div class="col-12"> <strong class="sponsor-title">Product sponsors</strong> </div> --}}
+      <!-- end col-12 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Florida</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Karat</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Soma</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Lota</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+            <figcaption><a href="#">Momo</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="clearfix"></div>
+      <!-- end clearfix -->
+      {{-- <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo09.jpg" alt="Image">
+            <figcaption><a href="#">Fleer de Leew</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div> --}}
+      <!-- end col-2 -->
+      {{-- <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="images/logo10.jpg" alt="Image">
+            <figcaption><a href="#">Armageddon</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo11.jpg" alt="Image">
+            <figcaption><a href="#">Georgia</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div> --}}
+      <!-- end col-2 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end content-section -->
 
 @endsection

@@ -2950,6 +2950,7 @@ body.page-loaded .preloader svg path {
     z-index: 0;
     letter-spacing: 1px;
     font-family: "Brookline";
+    visibility: hidden;
 }
 .sponsor-logo figcaption a {
     color: #43a872;
@@ -2957,6 +2958,11 @@ body.page-loaded .preloader svg path {
 .sponsor-logo:hover img {
     opacity: 0;
     visibility: hidden;
+}
+.sponsor-logo:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+    
 }
 
 /* TESTIMONIALS SIDE IMAGE */
