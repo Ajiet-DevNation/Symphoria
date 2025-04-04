@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#43a872" />
   <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon" />
-  <title>Symphoria | Auroras of Adventure</title>
+  <title>Symphoria | Your Stage, Your Story</title>
   
-  <meta name="title" content="Symphoria | Auroras of Adventure">
+  <meta name="title" content="Symphoria | Your Stage, Your Story">
   <meta name="description" content="A fusion of technical, cultural, literary and gaming events, it's a place to showcase your talents and have an learning and enriching experience.">
   <meta name="keywords" content="Aakar, aakar, Akaar, akaar, AJIET, ajiet, AJ, aj, AJ institute of engineering and technology, cultural, technical, fest, engineering, cs, is, ec, civil, mech, events, event">
   <meta name="robots" content="index,follow">
@@ -76,7 +76,7 @@
   @endisset
   <div class="preloader">
     <div class="inner">
-      <figure><img class="img-fluid" src="{{asset('frontend/images/logo2025.png')}}" alt="Image"></figure>
+      <figure><img class="img-fluid" src="{{asset('frontend/images/logo2025Full.png')}}" style="height: 500px" alt="Image"></figure>
       {{-- <figure><img class="img-fluid2" src="{{asset('frontend/images/transitonsponsor.webp')}}" width="25%" height="25%" alt="Image"></figure> --}}
       <div class="percentage" id="percentage">0</div>
     </div>
