@@ -11,7 +11,7 @@
         </div>
     </header>
     <section class="content-section events-section">
-        <span class="section-bg" data-background="{{ asset('frontend/images/section-bg01.png') }}" data-scroll
+        <span class="section-bg" data-background="{{ asset('frontend/images/section-bg04.png') }}" data-scroll
             data-scroll-speed="2"></span>
         <div class="container">
             <div class="row">
@@ -25,7 +25,7 @@
 
                                     <div class="event-box m-4">
 
-                                        {{-- <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image"/> --}}
+                                        <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image"/>
 
                                         <div class="content-box">
                                             <span>{{$event->date->isoFormat('DD-MM-YYYY')}}</span>
@@ -63,7 +63,7 @@
 
                                     <div class="event-box m-4">
 
-                                        {{-- <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image"/> --}}
+                                        <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image"/>
 
                                         <div class="content-box">
                                             <span>{{$event->date->isoFormat('DD-MM-YYYY')}}</span>
@@ -100,7 +100,7 @@
 
                                     <div class="event-box m-4">
 
-                                        {{-- <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image"/> --}}
+                                        <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image"/>
 
                                         <div class="content-box">
                                             <span>{{$event->date->isoFormat('DD-MM-YYYY')}}</span>
