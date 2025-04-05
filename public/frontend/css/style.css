@@ -330,7 +330,8 @@ input[type="submit"] {
     font-size: 14px;
     font-weight: 600;
     color: #fff;
-    background: #43a872;
+    background: #FFA726
+;
     border: none;
     padding: 0 50px;
 }
@@ -341,7 +342,8 @@ button[type="submit"] {
     font-size: 14px;
     font-weight: 600;
     color: #fff;
-    background: #43a872;
+    background: #FFA726
+;
     border: none;
     padding: 0 50px;
 }
@@ -808,7 +810,8 @@ body.page-loaded .preloader svg path {
 }
 .search-box .form form input[type="submit"] {
     height: 78px;
-    background: #43a872;
+    background: #FFA726
+;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
@@ -988,7 +991,8 @@ body.page-loaded .preloader svg path {
     font-size: 26px;
     font-family: "Brookline";
     margin-bottom: 15px;
-    color: #43a872;
+    color: #FFA726
+;
     margin-top: 10px;
 }
 
@@ -1093,7 +1097,8 @@ body.page-loaded .preloader svg path {
 }
 .mobile-menu .inner .site-menu ul li a:hover {
     text-decoration: none;
-    color: #43a872;
+    color: #FFA726
+;
 }
 
 /* CONTENT SECTION */
@@ -1186,10 +1191,12 @@ body.page-loaded .preloader svg path {
     color: #fff;
 }
 .custom-button.light:hover .circle .icon.arrow {
-    background: #43a872;
+    background: #FFA726
+;
 }
 .custom-button.light:hover .button-text {
-    color: #43a872;
+    color: #FFA726
+;
 }
 .custom-button.light .circle {
     width: 64px;
@@ -1206,7 +1213,8 @@ body.page-loaded .preloader svg path {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #43a872;
+    background: #FFA726
+;
 }
 .custom-button.light .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -1222,8 +1230,10 @@ body.page-loaded .preloader svg path {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #43a872;
-    border-right: 0.125rem solid #43a872;
+    border-top: 0.125rem solid #FFA726
+;
+    border-right: 0.125rem solid #FFA726
+;
     transform: rotate(45deg);
 }
 .custom-button.light .button-text {
@@ -1235,7 +1245,8 @@ body.page-loaded .preloader svg path {
     display: block;
     position: relative;
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    background: #43a872;
+    background: #FFA726
+;
     border-radius: 64px;
 }
 .custom-button .circle .icon {
@@ -1272,7 +1283,8 @@ body.page-loaded .preloader svg path {
     right: 0;
     bottom: 0;
     margin-left: 44px;
-    color: #43a872;
+    color: #FFA726
+;
     font-weight: 600;
     line-height: 64px;
     text-align: center;
@@ -1296,7 +1308,8 @@ body.page-loaded .preloader svg path {
 .custom-link {
     display: inline-block;
     font-weight: 600;
-    color: #43a872;
+    color: #FFA726
+;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -1308,7 +1321,8 @@ body.page-loaded .preloader svg path {
     content: "";
     width: 100%;
     height: 3px;
-    background: #43a872;
+    background: #FFA726
+;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -1351,7 +1365,8 @@ body.page-loaded .preloader svg path {
     margin-bottom: 10px;
     font-family: "Brookline";
     letter-spacing: 1px;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .section-title h2 {
     width: 100%;
@@ -1412,7 +1427,8 @@ body.page-loaded .preloader svg path {
     position: absolute;
     bottom: -5px;
     left: 50%;
-    background: #43a872;
+    background: #FFA726
+;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -1448,7 +1464,8 @@ body.page-loaded .preloader svg path {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 30px;
-    border: 2px solid #43a872;
+    border: 2px solid #FFA726
+;
     border-radius: 58px;
     color: #fff;
     font-weight: 600;
@@ -1475,7 +1492,8 @@ body.page-loaded .preloader svg path {
     z-index: -1;
     transform: scaleY(0);
     transform-origin: center top;
-    background: #43a872;
+    background: #FFA726
+;
     transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .navbar .navbar-button a figure {
@@ -1496,7 +1514,8 @@ body.page-loaded .preloader svg path {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 12px;
-    border: 2px solid #43a872;
+    border: 2px solid #FFA726
+;
     border-radius: 58px;
     color: #fff;
     font-weight: 600;
@@ -1631,7 +1650,8 @@ body.page-loaded .preloader svg path {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #43a872;
+    background: #FFA726
+;
     border-radius: 50%;
     position: relative;
 }
@@ -1639,7 +1659,8 @@ body.page-loaded .preloader svg path {
     content: "";
     width: 64px;
     height: 64px;
-    background: #43a872;
+    background: #FFA726
+;
     position: absolute;
     left: -12px;
     top: -12px;
@@ -1670,7 +1691,8 @@ body.page-loaded .preloader svg path {
     display: block;
     position: relative;
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    background: #43a872;
+    background: #FFA726
+;
     border-radius: 64px;
 }
 .slider
@@ -1906,7 +1928,8 @@ body.page-loaded .preloader svg path {
     margin-bottom: 10px;
     font-family: "Brookline";
     letter-spacing: 1px;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .page-header .inner h2 {
     width: 100%;
@@ -1941,7 +1964,8 @@ body.page-loaded .preloader svg path {
     margin-bottom: 10px;
     font-family: "Brookline";
     letter-spacing: 1px;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .side-content h3 {
     width: 100%;
@@ -2030,15 +2054,18 @@ body.page-loaded .preloader svg path {
     margin-bottom: 0;
 }
 .text-box h5 {
-    color: #43a872;
+    color: #FFA726
+;
     font-weight: 600;
 }
 .text-box h4 {
-    color: #43a872;
+    color: #FFA726
+;
     font-weight: 600;
 }
 .text-box h3 {
-    color: #43a872;
+    color: #FFA726
+;
     font-weight: 600;
 }
 .text-box strong {
@@ -2131,7 +2158,8 @@ body.page-loaded .preloader svg path {
     content: "";
     width: 60%;
     height: 6px;
-    background: #43a872;
+    background: #FFA726
+;
     position: absolute;
     left: -1px;
     top: -1px;
@@ -2218,7 +2246,8 @@ body.page-loaded .preloader svg path {
     content: "";
     width: 3px;
     height: 0;
-    background: #43a872;
+    background: #FFA726
+;
     position: absolute;
     left: 0;
     top: 0;
@@ -2232,7 +2261,8 @@ body.page-loaded .preloader svg path {
     height: 100%;
 }
 .schedule-box .nav div.active {
-    background: #43a872;
+    background: #FFA726
+;
 }
 .schedule-box .nav div .day {
     width: 100%;
@@ -2269,7 +2299,8 @@ body.page-loaded .preloader svg path {
     width: 180px;
     display: flex;
     font-weight: 600;
-    color: #43a872;
+    color: #FFA726
+;
     font-size: 15px;
     margin-top: 2px;
 }
@@ -2417,7 +2448,8 @@ body.page-loaded .preloader svg path {
     transition: all 0.25s ease-in-out;
 }
 .speaker figure figcaption ul li a:hover {
-    color: #43a872;
+    color: #FFA726
+;
 }
 .speaker .content-box {
     width: 100%;
@@ -2604,7 +2636,8 @@ body.page-loaded .preloader svg path {
     content: "";
     width: 60%;
     height: 6px;
-    background: #43a872;
+    background: #FFA726
+;
     position: absolute;
     left: -1px;
     top: 0;
@@ -2642,7 +2675,8 @@ body.page-loaded .preloader svg path {
 }
 .event-box .content-box h2 a:hover {
     text-decoration: none;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .event-box .content-box ul {
     width: 100%;
@@ -2763,7 +2797,7 @@ body.page-loaded .preloader svg path {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
     text-align: center;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
@@ -2779,7 +2813,8 @@ body.page-loaded .preloader svg path {
     display: none;
 }
 .price-box.featured h5 {
-    color: #43a872;
+    color: #FFA726
+;
 }
 .price-box.featured .custom-button .button-text {
     color: #fff;
@@ -2902,7 +2937,8 @@ body.page-loaded .preloader svg path {
 }
 .speaker-detail .content-box ul li a:hover {
     text-decoration: none;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .speaker-detail .content-box ul li strong {
     width: 100px;
@@ -2953,7 +2989,8 @@ body.page-loaded .preloader svg path {
     visibility: hidden;
 }
 .sponsor-logo figcaption a {
-    color: #43a872;
+    color: #FFA726
+;
 }
 .sponsor-logo:hover img {
     opacity: 0;
@@ -2988,7 +3025,8 @@ body.page-loaded .preloader svg path {
     margin-bottom: 10px;
     font-family: "Brookline";
     letter-spacing: 1px;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .testimonial h2 {
     width: 100%;
@@ -3030,7 +3068,8 @@ body.page-loaded .preloader svg path {
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: 600;
-    color: #43a872;
+    color: #FFA726
+;
 }
 .testimonial-box p {
     width: 100%;
@@ -3136,7 +3175,8 @@ body.page-loaded .preloader svg path {
 .blog-post .content-box small {
     width: 100%;
     display: block;
-    color: #43a872;
+    color: #FFA726
+;
     font-family: "Brookline";
     font-weight: 400;
 }
@@ -3155,7 +3195,8 @@ body.page-loaded .preloader svg path {
     font-family: "Brookline";
     font-size: 28px;
     padding-left: 40px;
-    border-left: 4px solid #43a872;
+    border-left: 4px solid #FFA726
+;
 }
 .blog-post .content-box blockquote p {
     margin-bottom: 10px;
@@ -3218,7 +3259,8 @@ body.page-loaded .preloader svg path {
     z-index: 1;
     font-weight: 400;
     font-size: 28px;
-    color: #43a872;
+    color: #FFA726
+;
     margin-bottom: 30px;
     padding-bottom: 30px;
     font-family: "Brookline";
@@ -3295,7 +3337,8 @@ body.page-loaded .preloader svg path {
     display: inline-block;
 }
 .pagination .page-item.active .page-link {
-    background: #43a872;
+    background: #FFA726
+;
     border-color: transparent;
     color: #fff;
 }
@@ -3390,7 +3433,8 @@ body.page-loaded .preloader svg path {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background: #43a872;
+    background: #FFA726
+;
     border-radius: 50%;
 }
 .transportation-box .title figure img {
@@ -3519,7 +3563,8 @@ body.page-loaded .preloader svg path {
 }
 .footer .newsletter-box form input[type="submit"] {
     height: 78px;
-    background: #43a872;
+    background: #FFA726
+;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
@@ -3586,7 +3631,8 @@ body.page-loaded .preloader svg path {
     content: "";
     width: 6px;
     height: 6px;
-    background: #43a872;
+    background: #FFA726
+;
     border-radius: 50%;
     margin-left: 10px;
 }
@@ -4194,7 +4240,8 @@ body.page-loaded .preloader svg path {
 }
 
 .card-border {
-    border: 0.2rem solid #43a872;
+    border: 0.2rem solid #FFA726
+;
 }
 
 /* .scan-sub-heading{
@@ -4202,12 +4249,14 @@ body.page-loaded .preloader svg path {
   font-size: 1.5rem;
 } */
 .card-background {
-    background-color: #43a872;
+    background-color: #FFA726
+;
 }
 
 .profile-card-background {
     background: #123052;
-    background: linear-gradient(90deg, #123052 0%, #43a872 100%);
+    background: linear-gradient(90deg, #123052 0%, #FFA726
+ 100%);
 }
 
 /* Border-Animation */
@@ -4275,7 +4324,8 @@ body.page-loaded .preloader svg path {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #43a872;
+    background: #FFA726
+;
     animation: animate 4s linear infinite;
 }
 
@@ -4322,7 +4372,8 @@ img[src='https://www.flipbookpdf.net/web/site/img/logonet.png']
 
 .button-reg-pdf{
     width: 100%;
-    background:#43a872;
+    background:#FFA726
+;
     color:#fff;
     border:none;
     display: inline-flex;
@@ -4349,7 +4400,8 @@ img[src='https://www.flipbookpdf.net/web/site/img/logonet.png']
     right:0;
     height:2px;
     width:0;
-    background: #43a872;
+    background: #FFA726
+;
     transition:400ms ease all;
   }
 .button-reg-pdf:after{
@@ -4414,3 +4466,4 @@ img[src='https://www.flipbookpdf.net/web/site/img/logonet.png']
       display: none;
     }
   } */
+
