@@ -154,6 +154,101 @@
     </div>
 </section>
 @endif
+<section class="content-section" style="padding-top: 0px">
+    <span class="section-bg" data-background="images/section-bg06.png" data-scroll data-scroll-speed="2"></span>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div data-scroll data-scroll-speed="-0.5">
+                    <div class="section-title text-center">
+                        <h6>Tech Team of Symphoria</h6>
+                        <h2>This Site is developed by</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div data-scroll data-scroll-speed="-0.5">
+                    <div class="speaker">
+                        <figure><img src="https://placehold.co/400" alt="Image">
+                            <figcaption>
+                                <ul>
+                                    <li><a href="{{ 'mailto:' }}"><i class="fab fa-google"></i></a>
+                                    </li>
+                                    <li><a href="{{ 'tel:+91' }}"><i class="fa fa-phone"></i></a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <div class="content-box">
+                            <h4>Darshan</h4>
+                            <small>Web Lead</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div data-scroll data-scroll-speed="0.5">
+                    <div class="speaker">
+                        <figure><img src="https://placehold.co/400" alt="Image">
+                            <figcaption>
+                                <ul>
+                                    <li><a href="{{ 'mailto:' }}"><i class="fab fa-google"></i></a>
+                                    </li>
+                                    <li><a href="{{ 'tel:+91' }}"><i class="fa fa-phone"></i></a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <div class="content-box">
+                            <h4>Darshan</h4>
+                            <small>Web Lead</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div data-scroll data-scroll-speed="-0.5">
+                    <div class="speaker">
+                        <figure><img src="https://placehold.co/400" alt="Image">
+                            <figcaption>
+                                <ul>
+                                    <li><a href="{{ 'mailto:' }}"><i class="fab fa-google"></i></a>
+                                    </li>
+                                    <li><a href="{{ 'tel:+91' }}"><i class="fa fa-phone"></i></a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <div class="content-box">
+                            <h4>Darshan</h4>
+                            <small>Web Lead</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div data-scroll data-scroll-speed="0.5">
+                    <div class="speaker">
+                        <figure><img src="https://placehold.co/400" alt="Image">
+                            <figcaption>
+                                <ul>
+                                    <li><a href="{{ 'mailto:' }}"><i class="fab fa-google"></i></a>
+                                    </li>
+                                    <li><a href="{{ 'tel:+91' }}"><i class="fa fa-phone"></i></a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <div class="content-box">
+                            <h4>Darshan</h4>
+                            <small>Web Lead</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section>
     <div class="row">
         <div class="col-12">

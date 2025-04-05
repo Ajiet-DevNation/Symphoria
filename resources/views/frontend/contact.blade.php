@@ -28,15 +28,15 @@
                     <div data-scroll data-scroll-speed="-0.5">
                         <div class="contact-box">
                             <h6>Address:</h6>
-                            <p>NH-66, Kunitikana, Mangaluru, Karnataka 575006</p>
-                            <p>Phone: <a href="callto:+917022405943">+91 702 2405 943</a></p>
+                            <p>AJ Institute of Dental Sciences, <br />NH-66, Kuntikana, <br /> Mangaluru - 575 004</p>
+                            <h6>Phone:</h6><p> <a href="callto:+918147034455">+91 81470 34455</a></p>
                         </div>
 
                         <div class="contact-box">
                             <h6>For general enquiries:</h6>
-                            <p>Use the mail given below for any queries related to AAKAR-2023. <br>
+                            <p>Use the mail given below for any queries related to SYMPHORIA-2025. <br>
                                 We will get back to you soon.</p>
-                            <a href="mailto:aakar@ajiet.edu.in">aakar@ajiet.edu.in</a>
+                            <a href="mailto:symphoria@ajids.edu.in">symphoria@ajids.edu.in</a>
                         </div>
                     </div>
                 </div>

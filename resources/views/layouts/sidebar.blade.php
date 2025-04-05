@@ -2,8 +2,8 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ url('/') }}" class="brand-link">
-        <img src="https://vemto.app/favicon.png" alt="Vemto Logo" class="brand-image bg-white img-circle">
-        <span class="brand-text font-weight-light">aakar</span>
+        <img src="{{asset('frontend/images/logo2025.png')}}" alt="Vemto Logo" class="brand-image bg-white img-circle">
+        <span class="brand-text font-weight-light">Symphoria</span>
     </a>
 
     <!-- Sidebar -->
