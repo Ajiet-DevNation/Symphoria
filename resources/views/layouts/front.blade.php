@@ -76,7 +76,7 @@
   @endisset
   <div class="preloader">
     <div class="inner">
-      <figure><img class="img-fluid" src="{{asset('frontend/images/logo2025Full.png')}}" style="height: 500px; width: 25.2rem; " alt="Image"></figure>
+      <figure><img class="img-fluid" src="{{asset('frontend/images/logo2025Full.png')}}" alt="Image"></figure>
       {{-- <figure><img class="img-fluid2" src="{{asset('frontend/images/transitonsponsor.webp')}}" width="25%" height="25%" alt="Image"></figure> --}}
       <div class="percentage" id="percentage">0</div>
     </div>
