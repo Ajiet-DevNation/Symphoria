@@ -28,14 +28,15 @@
 </header>
 
 <section class="content-section" data-background="#F6FAFB">
-
+  <span class="section-bg" data-background="{{ asset('frontend/images/section-bg011.png') }}" data-scroll
+  data-scroll-speed="2"></span>
   <!-- end section-bg -->
   <div class="container">
     <div class="row justify-content-center g-0">
       <div class="col-12">
         <div data-scroll data-scroll-speed="0.5">
           <div class="section-title text-center">
-            <h2 class="passHome">Get Your Pass</h2>
+            <h2 class="passHome text-dark">Get Your Pass</h2>
           </div>
           <!-- end section-title -->
         </div>
@@ -188,7 +189,7 @@
 </section> --}}
 {{-- Event Section of Home Page --}}
 <section class="content-section" data-background="#F6FAFB">
-  <span class="section-bg" data-background="{{asset('frontend/images/section-bg02.png')}}" data-scroll
+  <span class="section-bg" data-background="{{asset('frontend/images/section-bg022.png')}}" data-scroll
     data-scroll-speed="2"></span>
 
   <div class="container">
@@ -410,14 +411,16 @@
 
 <!-- end content-section -->
 <section class="content-section left-white-bg" data-background="#FFA500">
-  <span class="section-bg" data-background="{{ asset('frontend/images/section-bg03.png') }}" data-scroll
-    data-scroll-speed="1"></span>
-  <!-- end section-bg -->
+  <span class="section-bg" data-background="{{ asset('frontend/images/section-bg033.png') }}" data-scroll
+  data-scroll-speed="1">
+  <div class="overlay"></div>
+  </span>
+    <!-- end section-bg -->
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div data-scroll data-scroll-speed="0.5">
-          <img src="frontend/images/logo2025.png">
+          <img src="frontend/images/logo2025Full.png" style="height: 600px; width: auto" >
 
           {{-- <video loop class="side-image" autoplay muted>
             <source src="frontend/images/celebrateAakar.mp4" type="video/mp4">
