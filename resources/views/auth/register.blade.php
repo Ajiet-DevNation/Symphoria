@@ -187,7 +187,7 @@
                                             @if ($event->id == '48')
                                                 {
                                                 <option class="eventlist" value="{{ $event->id }}"
-                                                    style="background-color: #43a872">{{ $event->name }}</option>
+                                                    style="background-color: #FFA500">{{ $event->name }}</option>
                                                 }
                                             @endif
                                         @endforeach
@@ -198,7 +198,7 @@
                                         <span class="select-defualt-text">Select Upto 4 Events</span>
                                         {{-- <span class="event-count">4</span>
                                         <span class="just-text">Events</span> --}}
-                                        <span class="select-limit-message" style="color: #43a872">Maximum Number of Events
+                                        <span class="select-limit-message" style="color: #FFA500">Maximum Number of Events
                                             Selected!</span>
                                     </div>
                                     <select name="events[]" class="form-select select-multiple-event with-condition"
@@ -215,7 +215,7 @@
                                             @if ($event->id == '48')
                                                 {
                                                 <option class="eventlist" value="{{ $event->id }}"
-                                                    style="background-color: #43a872">{{ $event->name }}</option>
+                                                    style="background-color: #FFA500">{{ $event->name }}</option>
                                                 }
                                             @endif
                                         @endforeach
@@ -240,7 +240,7 @@
                                             @if ($event->id == '48')
                                                 {
                                                 <option class="eventlist" value="{{ $event->id }}"
-                                                    style="background-color: #43a872">{{ $event->name }}</option>
+                                                    style="background-color: #FFA500">{{ $event->name }}</option>
                                                 }
                                             @endif
                                         @endforeach

@@ -18,7 +18,7 @@
             <div class="col-12">
                 <div data-scroll data-scroll-speed="0.5">
                     <div class="section-title text-center">
-                        <h2 class="passHome" style="color: #43a872">Symphoria 2025 Catalogue</h2>
+                        <h2 class="passHome" style="color: #FFA500">Symphoria 2025 Catalogue</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
@@ -54,7 +54,7 @@
             <div class="col-12">
                 <div data-scroll data-scroll-speed="-0.5">
                     <div class="section-title text-center">
-                        <h2 style="color: #43a872">Welcome to Symphoria 2025!</h2>
+                        <h2 style="color: #FFA500">Welcome to Symphoria 2025!</h2>
                         <h4>Your Stage, Your Story!</h4>
                     </div>
                 </div>
