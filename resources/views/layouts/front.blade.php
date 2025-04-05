@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#43a872" />
+  <meta name="theme-color" content="#FFA500" />
   <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon" />
   <title>Symphoria | Your Stage, Your Story</title>
   
@@ -112,7 +112,7 @@
                 </form>
               </div>
               @else
-              <a href="{{route('login')}}" class="btn btn-primary mt-2" style="background: #43a872;border:solid #43a872 1px;"> <span class="text-white">Login</span> </a>
+              <a href="{{route('login')}}" class="btn btn-primary mt-2" style="background: #FFA500;border:solid #FFA500 1px;"> <span class="text-white">Login</span> </a>
               <a href="{{route('register')}}" class="btn btn-secondary mt-2" > <span class="text-white">Register</span> </a>
               @endif
             </li>

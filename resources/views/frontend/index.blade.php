@@ -28,8 +28,7 @@
 </header>
 
 <section class="content-section" data-background="#F6FAFB">
-  <span class="section-bg" data-background="{{ asset('frontend/images/section-bg05.jpg') }}" data-scroll
-    data-scroll-speed="2"></span>
+
   <!-- end section-bg -->
   <div class="container">
     <div class="row justify-content-center g-0">
@@ -117,7 +116,7 @@
     <!-- end container -->
 </section>
 <section class="content-section">
-  <span class="section-bg" data-background="{{ asset('frontend/images/section-bg01.png') }}" data-scroll
+  <span class="section-bg" data-background="{{ asset('frontend/images/section-bg05backup.jpg') }}" data-scroll
     data-scroll-speed="1"></span>
   <div class="container">
     <div class="row align-items-center">
@@ -410,7 +409,7 @@
 </section>
 
 <!-- end content-section -->
-<section class="content-section left-white-bg" data-background="#43a872">
+<section class="content-section left-white-bg" data-background="#FFA500">
   <span class="section-bg" data-background="{{ asset('frontend/images/section-bg03.png') }}" data-scroll
     data-scroll-speed="1"></span>
   <!-- end section-bg -->

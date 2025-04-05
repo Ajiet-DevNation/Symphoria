@@ -28,7 +28,7 @@
                     <div data-scroll data-scroll-speed="-0.5">
                         <div class="contact-box">
                             <h6>Address:</h6>
-                            <p>NH-66, Kottara Chowki, Mangaluru, Karnataka 575006</p>
+                            <p>NH-66, Kunitikana, Mangaluru, Karnataka 575006</p>
                             <p>Phone: <a href="callto:+917022405943">+91 702 2405 943</a></p>
                         </div>
 
@@ -91,7 +91,7 @@
     </section>
     <div class="google-maps mt-4">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8836825236663!2d74.82657731482139!3d12.915196790892892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a7940000001%3A0x37b1d2f42900de85!2sA%20J%20INSTITUTE%20OF%20ENGINEERING%20AND%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1652778880507!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4785.447705515733!2d74.84375047507523!3d12.89963438740916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35bfb9683df07%3A0x516656cc48b6f990!2sAJ%20Institute%20of%20Dental%20Sciences!5e1!3m2!1sen!2sin!4v1743822362915!5m2!1sen!2sin"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>

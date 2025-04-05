@@ -7,7 +7,7 @@
       <div class="col-lg-3 col-md-6">
         <div style="margin: 2rem"class="footer-widget">
           <h6 class="widget-title">Location</h6>
-          <p>NH-66, Kottara Chowki,<br>
+          <p>NH-66, Kuntikana,<br>
             Mangaluru, Karnataka <br>
             575006</p>
         </div>
