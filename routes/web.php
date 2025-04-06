@@ -31,7 +31,7 @@ Route::get('/about',[HomeController::class,'organizers']
 
 // Route::get('/qrcode',[HomeController::class,'qrcode_scanner']
 // )->name('qrcode_scanner');
-Route::get('/qrcode/{uid}',[HomeController::class,'user_details']
+Route::get('/qrcode/{id}',[HomeController::class,'user_details']
 )->name('user_details');
 
 // Route::get('/team',[HomeController::class,'team'])->name('team');

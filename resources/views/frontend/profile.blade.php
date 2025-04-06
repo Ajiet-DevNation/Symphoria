@@ -32,15 +32,15 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                     </div>
                 </div>
                 <div class="card mb-4 mb-lg-0 shadow-lg profile-box text-center">
-                    @if (Auth::user()->uid)
+                    @if (Auth::user()->id)
                     {{-- <img
                     src="https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={{ route('user_details', ['uid' => Auth::user()->uid]) }}" />
                     --}}
                     
                     <div class="d-flex justify-content-center">
-                        <span></span><span></span>
-                        {{ QrCode::size(280)->generate('https://www.simplesoftware.io') }}
-                    </div>
+                        {{-- <span></span><span></span> --}}
+                        {{ QrCode::size(280)->generate(route('user_details', ['id' => Auth::user()->id])) }}
+                    </div>                    
                     @endif
                 </div>
             </div>

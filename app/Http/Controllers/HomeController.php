@@ -110,7 +110,7 @@ class HomeController extends Controller
 
     public function user_details(Request $request)
     {
-        $user = User::where('uid', $request->uid)->first();
+        $user = User::where('id', $request->id)->first();
         if ($user) {
             return view('frontend.user_details', compact('user'));
         } else {
