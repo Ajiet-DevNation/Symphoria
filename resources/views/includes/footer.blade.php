@@ -30,6 +30,6 @@
       <span class="copyright"> Symphoria 2025 |  A.J. Institute of Dental Sciences</span>
       <span class="social-media">
       <li><a href="https://www.instagram.com/aj_mega_fest?igsh=MTIxeDUxZ3phbzBmeg=="><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
-    </span> <span class="creation">Site created by <a href="https://ajietdevnation.org/">AJIET DevNation</a></span> </div>
+    </span> <span class="creation">Site created by <a href="https://ajiet.edu.in">AJIET</a></span> </div>
   </div>
 </footer>
