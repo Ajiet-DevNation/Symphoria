@@ -237,11 +237,51 @@
               <div class="tab-pane fade show active" id="tab-content02">
                 <div class="timeline">
 
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">10:30AM
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">09:00 AM
                   </div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Pitch and Perfect</h5>
+                    <h5>Dance</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">10:30 AM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Inaugration</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">11:30 AM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>The Dance Affair</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">02:00 PM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Soulful Sounds</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">06:00 PM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Runway Royale</h5>
                     <p></p>
                   </div>
                 </div>
@@ -263,10 +303,19 @@
               <div class="tab-pane fade " id="tab-content03">
 
                 <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">1:00PM</div>
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">09:00 AM</div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Cine Short (Finals)</h5>
+                    <h5>The Entertainment Extravaganza</h5>
+                    <p></p>
+                  </div>
+                  <!-- end event-description -->
+                </div>
+                <div class="timeline">
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:00 PM</div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Validatory</h5>
                     <p></p>
                   </div>
                   <!-- end event-description -->
