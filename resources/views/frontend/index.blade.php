@@ -436,7 +436,7 @@
       <!-- end col-2 -->
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/1.png') }}" alt="Image">
             <figcaption><a href="#">Part Two</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
@@ -446,7 +446,7 @@
       <!-- end col-2 -->
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/2.png') }}" alt="Image">
             <figcaption><a href="#">Happytality</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
@@ -460,7 +460,7 @@
       <!-- end col-12 -->
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/3.png') }}" alt="Image">
             <figcaption><a href="#">Florida</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
@@ -470,7 +470,7 @@
       <!-- end col-2 -->
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/4.png') }}" alt="Image">
             <figcaption><a href="#">Karat</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
@@ -480,7 +480,7 @@
       <!-- end col-2 -->
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/7.png') }}" alt="Image">
             <figcaption><a href="#">Soma</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
