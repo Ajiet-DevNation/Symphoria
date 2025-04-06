@@ -1,8 +1,10 @@
 @extends('layouts.front')
-
+@php
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
+@endphp
 @section('content')
-    <section style="background-color: #eee; ">
-        <div class="container p-5">
+    <section style="background-color: #eee; mt-4">
+        <div class="container p-5 mt-5">
             <div class="row">
                 <div class="col">
                     <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
@@ -24,14 +26,19 @@
                                 style="width:10rem;height:10rem;border:0.4rem solid #ffffff;border-radius:5rem">
                             </lord-icon>
                             <h5 class="my-3 text-white">{{ $user->name }}</h5>
-                            <p class="text-white mb-4">{{ $user->uid }}</p>
+                            <p class="text-white">+91 {{ $user->phone }}</p>
+                            <p class="text-white mb-4">{{ $user->college_name }}</p>
                             <p class="text-white mb-4">{{ $user->transaction_id }}</p>
                         </div>
                     </div>
-                    <div class="card mb-4 mb-lg-0 shadow-lg  profile-box">
+                    <div class="card mb-4 mb-lg-0 shadow-lg  profile-box text-center">
                         <span></span><span></span>
-                        <img
-                            src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={{ $user->uid != null ? $user->uid : '' }}" />
+                        {{-- <img
+                            src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl={{ $user->uid != null ? $user->uid : '' }}" /> --}}
+                            <div class="d-flex justify-content-center">
+
+                                {{ QrCode::size(280)->generate(route('user_details', ['id' => $user->id])) }}
+                            </div>
                     </div>
                 </div>
 

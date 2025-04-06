@@ -25,6 +25,7 @@
         "league/flysystem-aws-s3-v3": "^3.29",
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
+        "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-permission": "^5.5"
     },
     "require-dev": {

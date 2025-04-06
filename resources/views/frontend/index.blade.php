@@ -209,15 +209,16 @@
           <div class="schedule-box">
             <div class="nav">
               <div data-bs-toggle="tab" data-bs-target="#tab-content01"> <span class="day">Prelims</span> <small
-                  class="date">THURSDAY, MARCH 23</small> <small style="font-size:10px">Gully Cricket, Slow and
-                  Furious</small></div>
+                  class="date">THURSDAY, APRIL 24</small> 
+                  {{-- <small style="font-size:10px">Flash Mob</small> --}}
+                </div>
               <!-- tab-nav -->
               <div class="active" data-bs-toggle="tab" data-bs-target="#tab-content02"> <span class="day">DAY 01</span>
-                <small class="date">FRIDAY, MARCH 24</small>
+                <small class="date">FRIDAY, APRIL 25</small>
               </div>
               <!-- tab-nav -->
               <div data-bs-toggle="tab" data-bs-target="#tab-content03"> <span class="day">DAY 02</span> <small
-                  class="date">SATURDAY, MARCH 25</small> </div>
+                  class="date">SATURDAY, APRIL 26</small> </div>
             </div>
             <!-- end nav -->
             <div class="tab-content">
@@ -227,15 +228,8 @@
                   <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">9:30AM</div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Gully Cricket 2.0<br />
+                    <h5>Flash Mob<br />
                       <p></p>
-                  </div>
-
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">2:00PM</div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Slow and Furious</h5>
-                    <p></p>
                   </div>
                 </div>
                 <!-- end event-description -->
@@ -243,51 +237,55 @@
               <div class="tab-pane fade show active" id="tab-content02">
                 <div class="timeline">
 
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">10:30AM
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">09:00 AM
                   </div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Pitch and Perfect</h5>
-                    <p></p>
-                  </div>
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">11:00AM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Vaividhya<br />Valorant<br />Reel It Feel It<br />Cine Short</h5>
-                    <p></p>
-                  </div>
-
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">11:30AM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Code War<br />Digital Dreams <br /> JAM </h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <!-- end timeline -->
-
-                <!-- end timeline -->
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:00PM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Quick Survey <br />Jumanji</h5>
+                    <h5>Dance</h5>
                     <p></p>
                   </div>
                 </div>
                 <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:30PM
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">10:30 AM
                   </div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5> Spyder Web</h5>
+                    <h5>Inaugration</h5>
                     <p></p>
                   </div>
                 </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">11:30 AM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>The Dance Affair</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">02:00 PM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Soulful Sounds</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="timeline">
+
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">06:00 PM
+                  </div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Runway Royale</h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- end timeline -->
 
                 {{-- <div class="timeline">
                   <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">1:30PM</div>
@@ -299,94 +297,25 @@
                   <!-- end event-description -->
                 </div> --}}
                 <!-- end timeline -->
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">2:00PM</div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Gully Cricket 2.0 (Finals)<br />Circuitronics</h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <!-- end timeline -->
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">3:30PM</div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Swara Milana</h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
               </div>
 
               <!-- end tab-pane -->
               <div class="tab-pane fade " id="tab-content03">
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">9:00AM</div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Step Up<br>Trial By Trivia</h5>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">9:30AM</div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5>Times Up<br />Blind Coding<br />Chromatic Shades</h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">10:00AM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5> Need For Speed<br />Paint Me Pretty<br />Rapid Rhythms </h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">10:30AM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5> Master CAED <br />Artistica</h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <!-- end timeline -->
-                <!-- end timeline -->
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">11:00AM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5> Robo Soccer <br /> Moves and Grooves<br />Masquerade <br /> Clash of Pens</h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
-                <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:00PM
-                  </div>
-                  <!-- end event-time -->
-                  <div class="event-description">
-                    <h5> Diamond Rush </h5>
-                    <p></p>
-                  </div>
-                  <!-- end event-description -->
-                </div>
 
                 <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">1:00PM</div>
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">09:00 AM</div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Cine Short (Finals)</h5>
+                    <h5>The Entertainment Extravaganza</h5>
+                    <p></p>
+                  </div>
+                  <!-- end event-description -->
+                </div>
+                <div class="timeline">
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:00 PM</div>
+                  <!-- end event-time -->
+                  <div class="event-description">
+                    <h5>Validatory</h5>
                     <p></p>
                   </div>
                   <!-- end event-description -->
@@ -477,7 +406,7 @@
   <!-- end container -->
 </section>
 <section class="content-section">
-  <div class="section-bg" data-background="images/section-bg02.png" data-scroll data-scroll-speed="1"></div>
+  <div class="section-bg" data-background="{{asset('frontend/images/section-bg01-alt.png')}}" data-scroll data-scroll-speed="1"></div>
   <!-- end section-bg -->
   <div class="container">
     <div class="row justify-content-center text-center">
