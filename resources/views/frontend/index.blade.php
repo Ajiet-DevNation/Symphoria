@@ -1,5 +1,5 @@
 @extends('layouts.front', [
-'varient' => 'transparent'
+
 ])
 
 @section('content')
@@ -47,13 +47,14 @@
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div data-scroll data-scroll-speed="-0.5">
           <div class="price-box">
-            <h5>BASE <br> PASS</h5>
-            <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
+            <h5>Event <br> PASS</h5>
+            <div class="price"> <span class="currency">₹</span> <span class="value">500</span></div>
             <!-- end price -->
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i>Registrants can participate in any single event
                 only.</li>
-              <li class="active"> <i class="far fa-check-circle"></i>Registrants can also register for mega events</li>
+              <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
+              <li class="active"> <i class="far fa-check-circle"></i>1 Team per college </li>
               {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
 
             </ul>
@@ -69,17 +70,14 @@
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div data-scroll data-scroll-speed="-0.5">
           <div class="price-box featured">
-            <h5>MEGA <br> PASS</h5>
+            <h5>Concert <br> PASS</h5>
             <!-- end price -->
             <ul>
-              <li class="active"> <i class="far fa-check-circle"></i> Registrants can only participate in events that
-                come under Mega Events.
+              <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
                 <small></small>
               </li>
-              <li class="fa-light fa-circle-xmark">Registrants cannot participate in General Events</li>
-              <li class="reg__info__description">Payment for all Mega Events/Gaming Events is on the spot.
-                <small></small>
-              </li>
+              <li class="fa-light fa-circle-xmark">Registrants cannot participate in other Events</li>
+              <li class="fa-light fa-circle-xmark">Individual Registeration for the concert</li>
               <li class="fa-light fa-circle-xmark"> </li>
 
             </ul>
