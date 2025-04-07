@@ -4,7 +4,7 @@
     <div class="container login-card">
         <div class="row justify-content-center">
             <div class="col-md-6 " style="padding: 1em;">
-                <div class="card shadow-lg mb-4 p-4">
+                <div class="card shadow-lg mt-3 mb-4 p-4">
                     <h2>Registration Info</h2>
                     <ul>
                         <li class="reg__info__title"><b>Concert Registration</b> </li>
@@ -44,7 +44,7 @@
                 
             </div>
             <div class="col-md-6 col-12" style="padding: 1em;">
-                <div class="card shadow-lg mb-4 ">
+                <div class="card shadow-lg mb-4 mt-3">
                     <div class="card-header login-header">
                         <h2 class="text-center">REGISTER</h2>
                     </div>

@@ -1,12 +1,12 @@
 @extends('layouts.front')
 
 @section('content')
-    <div class="container login-card">
+    <div class="container login-card ">
         <div class="row justify-content-center">
             <div class="col-3"></div>
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 mt-5">
                 <div class="card shadow-lg mb-4 ">
-                    <div class="card-header login-header">
+                    <div class="card-header login-header ">
                         <h2 class="text-center">LOGIN</h2>
                     </div>
                     <div class="card-body ">
