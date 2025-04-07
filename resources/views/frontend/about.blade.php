@@ -251,7 +251,7 @@
         </div>
     </div>
 </section>
-<section>
+{{-- <section>
     <div class="row">
         <div class="col-12">
             <div data-scroll data-scroll-speed="-0.5">
@@ -264,5 +264,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 @endsection

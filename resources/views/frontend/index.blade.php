@@ -451,7 +451,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
-            <figcaption><a href="#">Qonk</a></figcaption>
+            <figcaption><a href="#">AJIEt</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -461,7 +461,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/1.png') }}" alt="Image">
-            <figcaption><a href="#">Part Two</a></figcaption>
+            <figcaption><a href="#">Laxmi Memorial college of Nursing</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -471,7 +471,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/2.png') }}" alt="Image">
-            <figcaption><a href="#">Happytality</a></figcaption>
+            <figcaption><a href="#">Laxmi Memorial college of Hotel Management</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -485,7 +485,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/3.png') }}" alt="Image">
-            <figcaption><a href="#">Florida</a></figcaption>
+            <figcaption><a href="#">A J Institute of Management (MSc)</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -495,7 +495,27 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/4.png') }}" alt="Image">
-            <figcaption><a href="#">Karat</a></figcaption>
+            <figcaption><a href="#">A J Institute of Management </a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/5.png') }}" alt="Image">
+            <figcaption><a href="#">A J Institute of Dental Sciences</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/6.png') }}" alt="Image">
+            <figcaption><a href="#">A J Institute of Allied Health Science</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -505,27 +525,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/7.png') }}" alt="Image">
-            <figcaption><a href="#">Soma</a></figcaption>
-          </figure>
-          <!-- end sponsor-logo -->
-        </div>
-        <!-- end data-scroll -->
-      </div>
-      <!-- end col-2 -->
-      <div class="col-lg-2 col-md-3 col-6">
-        <div data-scroll data-scroll-speed="-0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
-            <figcaption><a href="#">Lota</a></figcaption>
-          </figure>
-          <!-- end sponsor-logo -->
-        </div>
-        <!-- end data-scroll -->
-      </div>
-      <!-- end col-2 -->
-      <div class="col-lg-2 col-md-3 col-6">
-        <div data-scroll data-scroll-speed="0.5">
-          <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
-            <figcaption><a href="#">Momo</a></figcaption>
+            <figcaption><a href="#">A J Institute of Management Medical Sciences</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
