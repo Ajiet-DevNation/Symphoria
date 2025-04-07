@@ -1,4 +1,14 @@
 @extends('layouts.front')
+
+@section('meta')
+    <meta name="description" content="User Profile">
+    <meta name="keywords" content="User, Profile, SYMPHORIA-2025, AJ Institute of Dental Sciences">
+    <meta name="author" content="Darshan Bhandary">
+    <meta name="copyright" content="Darshan Bhandary">
+    <meta name="robots" content="index,follow">
+
+@endsection
+
 @php
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 @endphp

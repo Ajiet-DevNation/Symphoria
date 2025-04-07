@@ -1,5 +1,15 @@
 @extends('layouts.front')
 
+@section('meta')
+
+@foreach ($events  as $item)
+<meta name="description" content="{{ $item->description }}">
+<meta name="keywords" content="{{ $item->name }}">
+<meta name="author" content="Darshan Bhandary">
+@endforeach
+    
+@endsection
+
 @section('content')
 <header class="page-header">
     <div class="container">

@@ -8,15 +8,22 @@
   <meta name="theme-color" content="#FFA500" />
   <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon" />
   <title>Symphoria | Your Stage, Your Story</title>
-  
+
   <meta name="title" content="Symphoria | Your Stage, Your Story">
-  <meta name="description" content="A fusion of technical, cultural, literary and gaming events, it's a place to showcase your talents and have an learning and enriching experience.">
-  <meta name="keywords" content="Aakar, aakar, Akaar, akaar, AJIET, ajiet, AJ, aj, AJ institute of engineering and technology, cultural, technical, fest, engineering, cs, is, ec, civil, mech, events, event">
+  <meta name="description"
+    content="Join us for Symphoria 2025, a grand cultural fest uniting the seven sister colleges under Lakshmi Memorial Trust. Enjoy music, dance, drama, and fashion at AJIDS Auditorium on April 25-26, 2025.">
+  <meta name="keywords"
+    content="Symphoria 2025, cultural fest, AJIDS, Lakshmi Memorial Trust, Mangalore fests, student events, college fest Mangalore, music dance drama fashion, April 2025 events, AJ Institute of Dental Sciences">
+  <meta name="author" content="Darshan Bhandary">
+  <meta name="copyright" content="Darshan Bhandary">
+
+  @yield('meta')
+
   <meta name="robots" content="index,follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
   <meta name="revisit-after" content="2 days">
-  <meta name="author" content="AJIET DevNation">
+  <meta name="author" content="Darshan Bhandary">
 
   <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
   <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
@@ -47,11 +54,13 @@
             @csrf
             <div class="row">
               <div class="col-md-12">
-                <select name="events[]" class="form-select select-multiple-event" multiple="multiple" style="width: 100%">
+                <select name="events[]" class="form-select select-multiple-event" multiple="multiple"
+                  style="width: 100%">
                   @foreach ($all_events as $event)
                   @if ($event->eventType->type!="Mega Events"&&$event->eventType->type!="Gaming Events")
                   @if (!in_array($event->id, Auth::user()->eventRegistrations->pluck('event_id')->toArray()))
-                  <option @if (old("events")){{ (in_array($event->id, old("events")) ? "selected":"") }}@endif value="{{$event->id}}">{{$event->name}}
+                  <option @if (old("events")){{ (in_array($event->id, old("events")) ? "selected":"") }}@endif
+                    value="{{$event->id}}">{{$event->name}}
                   </option>
                   @endif
 
@@ -77,7 +86,8 @@
   <div class="preloader">
     <div class="inner">
       <figure><img class="img-fluid" src="{{asset('frontend/images/logo2025Full.png')}}" alt="Image"></figure>
-      {{-- <figure><img class="img-fluid2" src="{{asset('frontend/images/transitonsponsor.webp')}}" width="25%" height="25%" alt="Image"></figure> --}}
+      {{-- <figure><img class="img-fluid2" src="{{asset('frontend/images/transitonsponsor.webp')}}" width="25%"
+          height="25%" alt="Image"></figure> --}}
       <div class="percentage" id="percentage">0</div>
     </div>
     <div class="loader-progress" id="loader-progress"> </div>
@@ -108,12 +118,16 @@
               <div class="m-2">
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                   @csrf
-                  <button type="submit" style="border-radius:0.5rem;margin:0rem;padding-right:2rem;padding-left:2rem;padding-top:0.75rem;padding-bottom:0.75rem;"> <span class="text-white">Logout</span> </button>
+                  <button type="submit"
+                    style="border-radius:0.5rem;margin:0rem;padding-right:2rem;padding-left:2rem;padding-top:0.75rem;padding-bottom:0.75rem;">
+                    <span class="text-white">Logout</span> </button>
                 </form>
               </div>
               @else
-              <a href="{{route('login')}}" class="btn btn-primary mt-2" style="background: #FFA500;border:solid #FFA500 1px;"> <span class="text-white">Login</span> </a>
-              <a href="{{route('register')}}" class="btn btn-secondary mt-2" > <span class="text-white">Register</span> </a>
+              <a href="{{route('login')}}" class="btn btn-primary mt-2"
+                style="background: #FFA500;border:solid #FFA500 1px;"> <span class="text-white">Login</span> </a>
+              <a href="{{route('register')}}" class="btn btn-secondary mt-2"> <span class="text-white">Register</span>
+              </a>
               @endif
             </li>
           </ul>

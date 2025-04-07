@@ -1,5 +1,12 @@
 @extends('layouts.front')
 
+@section('meta')
+    <meta name="description" content="Contact us for any queries related to SYMPHORIA-2025.">
+    <meta name="keywords" content="Contact, SYMPHORIA-2025, AJ Institute of Dental Sciences">
+    <meta name="author" content="Darshan Bhandary">
+    <meta name="copyright" content="Darshan Bhandary">
+@endsection
+
 @section('content')
     <header class="page-header" {{-- data-background="{{asset('frontend/images/contactUs.png')}}" --}}>
         <div class="container">
