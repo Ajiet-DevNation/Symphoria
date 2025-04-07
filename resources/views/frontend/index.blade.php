@@ -29,7 +29,7 @@
 
 <section class="content-section" data-background="#F6FAFB">
   <span class="section-bg" data-background="{{ asset('frontend/images/section-bg011.png') }}" data-scroll
-  data-scroll-speed="2"></span>
+    data-scroll-speed="2"></span>
   <!-- end section-bg -->
   <div class="container">
     <div class="row justify-content-center g-0">
@@ -44,11 +44,11 @@
       </div>
       <!-- end col-12 -->
 
-      <div class="col-xl-3 col-lg-4 col-md-6">
+      <div class="col-xl-3 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="-0.5">
           <div class="price-box">
             <h5>Event <br> PASS</h5>
-            <div class="price"> <span class="currency">₹</span> <span class="value">500</span></div>
+            <div class="price"> <span class="currency">₹</span> <span class="value">2500</span></div>
             <!-- end price -->
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i>Registrants can participate in any single event
@@ -67,18 +67,18 @@
       </div>
       <!-- end col-3 -->
       <!-- end col-3 -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div data-scroll data-scroll-speed="-0.5">
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div data-scroll data-scroll-speed="0.5">
           <div class="price-box featured">
             <h5>Concert <br> PASS</h5>
+            <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
             <!-- end price -->
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
                 <small></small>
               </li>
-              <li class="fa-light fa-circle-xmark">Registrants cannot participate in other Events</li>
-              <li class="fa-light fa-circle-xmark">Individual Registeration for the concert</li>
-              <li class="fa-light fa-circle-xmark"> </li>
+              <li class="fa-active">Registrants cannot participate in other Events</li>
+              <li class="fa-active fa-circle-xmark">Individual Registeration for the concert</li>
 
             </ul>
             <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
@@ -89,24 +89,6 @@
         <!-- end data-scroll -->
       </div>
       <!-- end col-3 -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div data-scroll data-scroll-speed="-0.5">
-          <div class="price-box">
-            <h5>PREMIUM PASS</h5>
-            <div class="price"> <span class="currency">₹</span> <span class="value">300</span></div>
-            <!-- end price -->
-            <ul>
-              <li class="active"> <i class="far fa-check-circle"></i>Registrants can participate in upto 4 General
-                Events</li>
-              <li class="active"> <i class="far fa-check-circle"></i>Registrants can also register for mega events</li>
-              {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
-
-            </ul>
-            <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
-                  class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
-          </div>
-          <!-- end price-box -->
-        </div>
         <!-- end data-scroll -->
       </div>
 
@@ -207,9 +189,9 @@
           <div class="schedule-box">
             <div class="nav">
               <div data-bs-toggle="tab" data-bs-target="#tab-content01"> <span class="day">Prelims</span> <small
-                  class="date">THURSDAY, APRIL 24</small> 
-                  {{-- <small style="font-size:10px">Flash Mob</small> --}}
-                </div>
+                  class="date">THURSDAY, APRIL 24</small>
+                {{-- <small style="font-size:10px">Flash Mob</small> --}}
+              </div>
               <!-- tab-nav -->
               <div class="active" data-bs-toggle="tab" data-bs-target="#tab-content02"> <span class="day">DAY 01</span>
                 <small class="date">FRIDAY, APRIL 25</small>
@@ -301,7 +283,8 @@
               <div class="tab-pane fade " id="tab-content03">
 
                 <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">09:00 AM</div>
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">09:00 AM
+                  </div>
                   <!-- end event-time -->
                   <div class="event-description">
                     <h5>The Entertainment Extravaganza</h5>
@@ -310,7 +293,8 @@
                   <!-- end event-description -->
                 </div>
                 <div class="timeline">
-                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:00 PM</div>
+                  <div class="event-time"><img src="{{asset('frontend/images/icon-time.png')}}" alt="Image">12:00 PM
+                  </div>
                   <!-- end event-time -->
                   <div class="event-description">
                     <h5>Validatory</h5>
@@ -339,15 +323,15 @@
 <!-- end content-section -->
 <section class="content-section left-white-bg" data-background="#FFA500">
   <span class="section-bg" data-background="{{ asset('frontend/images/section-bg033.png') }}" data-scroll
-  data-scroll-speed="1">
-  <div class="overlay"></div>
+    data-scroll-speed="1">
+    <div class="overlay"></div>
   </span>
-    <!-- end section-bg -->
+  <!-- end section-bg -->
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div data-scroll data-scroll-speed="0.5">
-          <img src="frontend/images/logo2025Full.png" style="height: 600px; width: auto" >
+          <img src="frontend/images/logo2025Full.png" style="height: 600px; width: auto">
 
           {{-- <video loop class="side-image" autoplay muted>
             <source src="frontend/images/celebrateAakar.mp4" type="video/mp4">
@@ -404,7 +388,8 @@
   <!-- end container -->
 </section>
 <section class="content-section">
-  <div class="section-bg" data-background="{{asset('frontend/images/section-bg01-alt.png')}}" data-scroll data-scroll-speed="1"></div>
+  <div class="section-bg" data-background="{{asset('frontend/images/section-bg01-alt.png')}}" data-scroll
+    data-scroll-speed="1"></div>
   <!-- end section-bg -->
   <div class="container">
     <div class="row justify-content-center text-center">

@@ -9,22 +9,17 @@
                     <ul>
                         <li class="reg__info__title"><b>Concert Registration</b> </li>
                         <ul>
-                            <li class="reg__info__description">Registrants can attend the concert only by selecting it in the premium pass as one of the event </li>
+                            <li class="reg__info__description">Registrants can attend the concert only by registering through concert pass </li>
                         </ul>
-                        <li class="reg__info__title"><b>Mega Events & Gaming Events</b> </li>
+                        <li class="reg__info__title"><b>Event Pass</b> </li>
                         <ul>
-                            <li class="reg__info__description">Registrants can participate in any number of these events
-                                irrespective of pass type</li>
-                            <li class="reg__info__description">Payment for these events are done ON SPOT</li>
+                            <li class="reg__info__description">Registrants can participate in events only.</li>
+                            <li class="reg__info__description">Team lead has to register.</li>
+                            <li class="reg__info__description">One team per college.</li>
                         </ul>
-                        <li class="reg__info__title"><b>Base Pass</b> </li>
+                        <li class="reg__info__title"><b>Concert Pass</b> </li>
                         <ul>
-                            <li class="reg__info__description">Registrants can participate in a single general event only
-                            </li>
-                        </ul>
-                        <li class="reg__info__title"><b>Premium Pass</b> </li>
-                        <ul>
-                            <li class="reg__info__description">Registrants can participate in upto 4 general events</li>
+                            <li class="reg__info__description"></li>
                         </ul>
                         <li class="reg__info__title"><b>Mega Pass</b></li>
                         <ul>
