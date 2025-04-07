@@ -3,10 +3,10 @@
 @section('meta')
 
 @foreach ($events  as $item)
-<meta name="description" content="{{ $item->description }}">
+{{-- <meta name="description" content="{{ $item->description }}"> --}}
 <meta name="keywords" content="{{ $item->name }}">
-<meta name="author" content="Darshan Bhandary">
 @endforeach
+<meta name="author" content="Darshan Bhandary">
     
 @endsection
 
