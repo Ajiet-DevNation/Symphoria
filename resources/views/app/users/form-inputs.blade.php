@@ -47,10 +47,10 @@
         <x-inputs.select name="pass_type" label="Pass Type" required>
             @php $selected = old('pass_type', ($editing ? $user->pass_type : '')) @endphp
             <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the Pass Type</option>
-            <option value="base" {{ $selected == "base" ? 'selected' : '' }} >Base Pass</option>
+            <option value="event" {{ $selected == "event" ? 'selected' : '' }} >Event Pass</option>
+            <option value="concert" {{ $selected == "concert" ? 'selected' : '' }} >Concert Pass</option>
             <option value="premium" {{ $selected == "premium" ? 'selected' : '' }} >Premium Pass</option>
-            <option value="mega" {{ $selected == "mega" ? 'selected' : '' }} >Mega Pass</option>
-            <option value="AJIET" {{ $selected == "AJIET" ? 'selected' : '' }} >AJIET Pass</option>
+            {{-- <option value="AJIET" {{ $selected == "AJIET" ? 'selected' : '' }} >AJIET Pass</option> --}}
         </x-inputs.select>
     </x-inputs.group>
 

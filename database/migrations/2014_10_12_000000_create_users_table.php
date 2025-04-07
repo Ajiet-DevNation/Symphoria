@@ -31,8 +31,8 @@ return new class extends Migration
             $table->longText('payment_screenshot')->nullable();
             $table->mediumText('transaction_id')->nullable();
             $table
-                ->enum('pass_type', ['base', 'premium', 'mega', 'AJIET'])
-                ->default('base')
+                ->enum('pass_type', ['event', 'concert', 'premium'])
+                ->default('concert')
                 ->nullable();
             $table->mediumText('college_name')->nullable();
             $table->longText('id_card')->nullable();

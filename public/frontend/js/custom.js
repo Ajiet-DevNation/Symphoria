@@ -1,5 +1,5 @@
 function clearEvents(type) {
-    if (type == "base") {
+    if (type == "event") {
         $(".select-multiple-event").val(null).trigger("change");
     } else if (type == "premium") {
         $(".select-single-event").val(null).trigger("change");
@@ -11,60 +11,48 @@ function clearEvents(type) {
     // $(".select-mega-event").val(null).trigger("change");
 }
 
-const rollNumberInput = $(".usn");
+// const rollNumberInput = $(".usn");
 
-rollNumberInput.on("focusout", function () {
-    const rollNumber = rollNumberInput.val().trim();
+// rollNumberInput.on("focusout", function () {
+//     const rollNumber = rollNumberInput.val().trim();
 
-    const regex = /^4JK(19|20|21|22)(CS|EC|ME|CV|IS)\d{3}$/;
+//     const regex = /^4JK(19|20|21|22)(CS|EC|ME|CV|IS)\d{3}$/;
 
-    if (regex.test(rollNumber)) {
-        $(".select-pass").val("AJIET");
-        showEvents();
-    }
-});
+//     if (regex.test(rollNumber)) {
+//         $(".select-pass").val("AJIET");
+//         showEvents();
+//     }
+// });
 
 function showEvents() {
     const pass_type = $(".select-pass").val();
-    if (pass_type == "base") {
+    if (pass_type == "event") {
         $(".select-single-event-div").show();
-        $(".condition-div").hide();
-        $(".ajiet-students").hide();
         $(".select-payment-text").show();
         $(".select-mega-event-div").show();
-        $(".pay-150").show();
+        $(".pay-2500").show();
+        $(".pay-150").hide();
         $(".pay-300").hide();
+        $(".concert-pass-text").hide();
     } else if (pass_type == "premium") {
         $(".unselectable").prop("disabled", true);
         $(".select-single-event-div").hide();
-        $(".condition-div").show();
-        $(".ajiet-students").hide();
         $(".select-mega-event-div").show();
         $(".select-payment-text").show();
+        $(".pay-2500").hide();
         $(".pay-150").hide();
         $(".pay-300").show();
+        $(".concert-pass-text").show();
         $(".select-limit-message").hide();
-    } else if (pass_type == "mega") {
+    } else if (pass_type == "concert") {
         $(".unselectable").prop("disabled", true);
         $(".select-mega-event-div").show();
-        $(".select-payment-required").removeAttr("required");
-        $(".payment_screnshot").removeAttr("required");
-        $(".select-payment-text").hide();
+        $(".select-payment-text").show();
         $(".select-single-event-div").hide();
-        $(".condition-div").hide();
-        $(".ajiet-students").hide();
-        $(".pay-150").hide();
+        $(".pay-150").show();
+        $(".pay-2500").hide();
         $(".pay-300").hide();
-    } else if (pass_type == "AJIET") {
-        $(".unselectable").prop("disabled", true);
-        $(".ajiet-students").show();
-        $(".condition-div").hide();
-        $(".select-mega-event-div").show();
-        $(".select-payment-required").removeAttr("required");
-        $(".select-payment-text").hide();
-        $(".select-single-event-div").hide();
-        $(".pay-150").hide();
-        $(".pay-300").hide();
+        $(".concert-pass-text").hide();
     }
 
     clearEvents(pass_type);
@@ -78,50 +66,34 @@ $(function () {
 
 $(".select-limit-message").hide();
 $(".select-pass").on("change", function () {
-    if (this.value == "base") {
+    if (this.value == "event") {
         clearEvents(this.value);
         $(".select-single-event-div").show();
-        $(".condition-div").hide();
-        $(".ajiet-students").hide();
         $(".select-payment-text").show();
-        $(".select-mega-event-div").show();
-        $(".pay-150").show();
+        $(".pay-2500").show();
+        $(".pay-150").hide();
         $(".pay-300").hide();
+        $(".concert-pass-text").hide();
     } else if (this.value == "premium") {
         clearEvents(this.value);
         $(".unselectable").prop("disabled", true);
-        $(".select-single-event-div").hide();
-        $(".condition-div").show();
-        $(".ajiet-students").hide();
-        $(".select-mega-event-div").show();
+        $(".select-single-event-div").show();
         $(".select-payment-text").show();
         $(".pay-150").hide();
+        $(".pay-2500").hide();
         $(".pay-300").show();
         $(".select-limit-message").hide();
-    } else if (this.value == "mega") {
+        $(".concert-pass-text").show();
+    } else if (this.value == "concert") {
         clearEvents(this.value);
         $(".unselectable").prop("disabled", true);
         $(".select-mega-event-div").show();
-        $(".select-payment-required").removeAttr("required");
-        $(".payment_screnshot").removeAttr("required");
-        $(".select-payment-text").hide();
         $(".select-single-event-div").hide();
-        $(".condition-div").hide();
-        $(".ajiet-students").hide();
-        $(".pay-150").hide();
+        $(".pay-150").show();
+        $(".pay-2500").hide();
         $(".pay-300").hide();
-    } else if (this.value == "AJIET") {
-        clearEvents(this.value);
-        $(".unselectable").prop("disabled", true);
-        $(".ajiet-students").show();
-        $(".condition-div").hide();
-        $(".select-mega-event-div").show();
-        $(".select-payment-required").removeAttr("required");
-        $(".select-payment-text").hide();
-        $(".select-single-event-div").hide();
-        $(".pay-150").hide();
-        $(".pay-300").hide();
-    }
+        $(".concert-pass-text").hide();
+    } 
 });
 
 var select = $(".with-condition");
@@ -156,7 +128,7 @@ function validateRegistration() {
     const passType = document.getElementsByName("pass_type");
     const selectEvents = document.getElementsByName("events[]");
     switch (passType[0].value) {
-        case "base":
+        case "event":
             if (
                 selectEvents[0].value == "Select Event" ||
                 !selectEvents[0].value
@@ -172,15 +144,9 @@ function validateRegistration() {
                 return false;
             }
             break;
-        case "mega":
+        case "concert":
             console.log(selectEvents[3].value);
             if (!selectEvents[3].value) {
-                alert("Please select an Event");
-                return false;
-            }
-            break;
-        case "AJIET":
-            if (!selectEvents[2].value && !selectEvents[3].value) {
                 alert("Please select an Event");
                 return false;
             }
