@@ -9,6 +9,7 @@ use App\Models\Event;
 use App\Models\EventRegistration;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage as FacadesStorage;
 use Illuminate\Support\Facades\Validator;
 use Storage;
 
@@ -52,6 +53,7 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        // dd($data);
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -61,7 +63,7 @@ class RegisterController extends Controller
             'college_name' => ['required'],
             'transaction_id' => ['nullable', 'unique:users'],
 
-            // 'payment_screenshot' => ['required']
+            'payment_screenshot' => ['required']
         ]);
     }
 
@@ -84,7 +86,15 @@ class RegisterController extends Controller
             'pass_type' => $data['pass_type'],
             'transaction_id' => $data['transaction_id']
         ]);
+        // dd($data['payment_screenshot']);
+        if (isset($data['payment_screenshot'])) {
+            $file = $data['payment_screenshot'];
+            $path = 'payment_screenshots/' . time() . '_' . $file->getClientOriginalName();
+            FacadesStorage::disk('public')->put($path, file_get_contents($file));
+            $user->payment_screenshot = $path;
+        }
         //   dd($data['events']);
+        // dd("done");
         if (isset($data['events'])) {
             foreach ($data['events'] as $key => $event) {
                 $reg = new EventRegistration;

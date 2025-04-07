@@ -29,7 +29,7 @@ class UserStoreRequest extends FormRequest
             'email' => ['required', 'unique:users,email', 'email'],
             'password' => ['required'],
             'phone' => ['nullable', 'max:255', 'string'],
-            'pass_type' => ['nullable', 'in:base,premium,mega,AJIET'],
+            'pass_type' => ['nullable', 'in:premium,event,concert'],
             'usn' => ['nullable', 'max:255', 'string'],
             'uid' => ['nullable', 'max:255', 'string'],
             'transaction_id' => ['nullable', 'max:255', 'string'],

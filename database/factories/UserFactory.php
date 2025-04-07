@@ -35,7 +35,7 @@ class UserFactory extends Factory
             'payment_screenshot' => $this->faker->text,
             'transaction_id' => $this->faker->text,
             'college_name' => $this->faker->text,
-            'pass_type' => 'base',
+            'pass_type' => 'event',
             'id_card' => $this->faker->text,
         ];
     }

@@ -13,29 +13,29 @@
                         </ul>
                         <li class="reg__info__title"><b>Event Pass</b> </li>
                         <ul>
-                            <li class="reg__info__description">Registrants can participate in events only.</li>
+                            <li class="reg__info__description">Registrants can participate in registered event only.</li>
                             <li class="reg__info__description">Team lead has to register.</li>
+                            <li class="reg__info__description">One team per college.</li>
+                        </ul>
+                        <li class="reg__info__title"><b>Premium Pass</b> </li>
+                        <ul>
+                            <li class="reg__info__description">Team lead has to register.</li>
+                            <li class="reg__info__description">Team of the Registered Team Lead can participate in the registered event only.</li>
+                            <li class="reg__info__description">Concert Pass is given to the 20 members of the team including team lead.</li>
                             <li class="reg__info__description">One team per college.</li>
                         </ul>
                         <li class="reg__info__title"><b>Concert Pass</b> </li>
                         <ul>
-                            <li class="reg__info__description"></li>
+                            <li class="reg__info__description">Registrants can participate in concert only</li>
+                            <li class="reg__info__description">Individual Registeration</li>
                         </ul>
-                        <li class="reg__info__title"><b>Mega Pass</b></li>
+                        <li class="reg__info__title"><b>Events at Symphoria 2025</b></li>
                         <ul>
-                            <li class="reg__info__description">Registrants can participate only in MEGA Events & Gaming
-                                Events and payment will be ON SPOT.</li>
-                        </ul>
-                        <li class="reg__info__title"><b>Payment for Mega/Gaming Events (ON SPOT)</b></li>
-                        <ul>
-                            <li class="reg__info__description">Vaividhya - 1500/- Per Team</li>
-                            <li class="reg__info__description">Robo Soccer - 1000/- Per Team</li>
-                            <li class="reg__info__description">Gully Cricket - 700/- Per Team </li>
-                            <li class="reg__info__description">Valorant - 600/- Per Team</li>
-                            <li class="reg__info__description">Cine Short, Swara Milana, Slow and Furious, Trial by Trivia,
-                                Moves & Grooves - 150/- Per Person</li>
-                            <li class="reg__info__description">NFS, Jumanji, Clash of Pens - 100/- Per Person</li>
-
+                            <li class="reg__info__description">The Event Extravaganza - 2500/- Per Team</li>
+                            <li class="reg__info__description">Soulful Sounds - 2500/- Per Team</li>
+                            <li class="reg__info__description">Runway Royale - 2500/- Per Team </li>
+                            <li class="reg__info__description">The Dance Affair - 2500/- Per Team</li>
+                            <li class="reg__info__description">Concert - 150/- Per Person</li>
                         </ul>
                     </ul>
                     
@@ -146,20 +146,9 @@
                                     <select name="pass_type" class="form-select select-pass" required
                                         aria-label="Default select example">
                                         <option disabled>Select Pass</option>
-                                        <option value="base" {{ old('pass_type') == 'base' ? 'selected' : '' }}>Base
-                                            Pass
-                                            -
-                                            Single Event</option>
-                                        <option value="premium" {{ old('pass_type') == 'premium' ? 'selected' : '' }}>
-                                            Premium
-                                            Pass - Multiple Events</option>
-                                        <option value="mega" {{ old('pass_type') == 'mega' ? 'selected' : '' }}>Mega
-                                            Pass - Mega Pass
-                                        </option>
-                                        <option class="to-hide" hidden value="AJIET"
-                                            {{ old('pass_type') == 'AJIET' ? 'selected' : '' }}>AJIET Pass - Only for AJIET
-                                            Students
-                                        </option>
+                                        <option value="event" {{ old('pass_type') == 'event' ? 'selected' : '' }}>Event Pass - Single Event</option>
+                                        <option value="concert" {{ old('pass_type') == 'concert' ? 'selected' : '' }}>Concert Pass </option>
+                                        <option value="premium" {{ old('pass_type') == 'premium' ? 'selected' : '' }}>Premium Pass </option>
                                     </select> 
                                     @error('pass_type')
                                         <span class="invalid-feedback" role="alert">
@@ -173,78 +162,18 @@
                                         <option selected disabled>Select Event</option>
                                         @foreach ($events as $event)
                                             {{-- 48 is the id for the band pass. used to highlight only the band pass --}}
-                                            @if ($event->eventType->type != 'Mega Events' && $event->eventType->type != 'Gaming Events' && $event->id != '48')
                                                 <option class="eventlist"
                                                     @if (old('events')) {{ in_array($event->id, old('events')) ? 'selected' : '' }} @endif
                                                     value="{{ $event->id }}">{{ $event->name }}</option>
-                                            @endif
                                             {{-- Experimental Code --}}
-                                            @if ($event->id == '48')
-                                                {
-                                                <option class="eventlist" value="{{ $event->id }}"
-                                                    style="background-color: #FFA500">{{ $event->name }}</option>
-                                                }
-                                            @endif
+                                            
                                         @endforeach
                                     </select>
                                 </div>
-                                <div class="col-md-12 mt-3 condition-div select-multiple-event-div">
-                                    <div>
-                                        <span class="select-defualt-text">Select Upto 4 Events</span>
-                                        {{-- <span class="event-count">4</span>
-                                        <span class="just-text">Events</span> --}}
-                                        <span class="select-limit-message" style="color: #FFA500">Maximum Number of Events
-                                            Selected!</span>
-                                    </div>
-                                    <select name="events[]" class="form-select select-multiple-event with-condition"
-                                        multiple="multiple">
-                                        <option class="unselectable" disabled>Select Event</option>
-                                        @foreach ($events as $event)
-                                            @if ($event->eventType->type != 'Mega Events' && $event->eventType->type != 'Gaming Events' && $event->id != '48')
-                                                <option class="eventlist"
-                                                    @if (old('events')) {{ in_array($event->id, old('events')) ? 'selected' : '' }} @endif
-                                                    value="{{ $event->id }}">{{ $event->name }}
-
-                                                </option>
-                                            @endif
-                                            @if ($event->id == '48')
-                                                {
-                                                <option class="eventlist" value="{{ $event->id }}"
-                                                    style="background-color: #FFA500">{{ $event->name }}</option>
-                                                }
-                                            @endif
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="col-md-12 mt-3 ajiet-students select-multiple-event-div">
-                                    <div>
-                                        <span class="select-defualt-text">Select Events</span>
-
-                                    </div>
-                                    <select name="events[]" class="form-select select-multiple-event"
-                                        multiple="multiple">
-                                        <option class="unselectable" selected disabled>Select Event</option>
-                                        @foreach ($events as $event)
-                                            @if ($event->eventType->type != 'Mega Events' && $event->eventType->type != 'Gaming Events' && $event->id != '48')
-                                                <option class="eventlist"
-                                                    @if (old('events')) {{ in_array($event->id, old('events')) ? 'selected' : '' }} @endif
-                                                    value="{{ $event->id }}">{{ $event->name }}
-
-                                                </option>
-                                            @endif
-                                            @if ($event->id == '48')
-                                                {
-                                                <option class="eventlist" value="{{ $event->id }}"
-                                                    style="background-color: #FFA500">{{ $event->name }}</option>
-                                                }
-                                            @endif
-                                        @endforeach
-                                    </select>
-                                </div>
-                                {{-- <p class="mt-2">
-                                    <b>Note: Concert Tickets are free with Premium Pass.</b>
-                                </p> --}}
-                                <div class="col-md-12 mt-3 select-mega-event-div">
+                                <p class="mt-2 concert-pass-text">
+                                    <b>Note: Concert Pass is given to the 20 members of the team including team lead.</b>
+                                </p>
+                                {{-- <div class="col-md-12 mt-3 select-mega-event-div">
                                     <label for="">Select Mega/Gaming Events <small class="text-muted">(Payment is on-spot)</small></label>
                                     <select id="megaID" name="events[]" class="form-select select-mega-event"
                                         multiple="multiple" onchange="changeFunc()">
@@ -258,7 +187,7 @@
                                             @endif
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
 
                             </div>
                             <div class="row mb-3 justify-content-center select-payment-text">
@@ -266,8 +195,9 @@
                                     <h1 class=" scan-heading">SCAN</h1>
                                     <h3 class="scan-sub-heading">AND</h3>
                                     <h1 class="scan-heading">PAY</h1>
+                                    <h1 class="scan-heading pay-2500">₹2500</h1>
                                     <h1 class="scan-heading pay-150">₹150</h1>
-                                    <h1 class="scan-heading pay-300">₹300</h1>
+                                    <h1 class="scan-heading pay-300">₹5500</h1>
 
 
                                 </div>
@@ -276,7 +206,7 @@
                                     <img src="{{ asset('frontend/images/upi2023.jpg') }}" class="img-fluid"
                                         alt="" srcset=""
                                         style="display: block; margin-left: auto; margin-right: auto;">
-                                    <p class="text-center">ajiet@cnrb</p>
+                                    <p class="text-center">ajids@cnrb</p>
                                 </div>
 
                             </div>

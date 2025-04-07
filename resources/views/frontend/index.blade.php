@@ -51,9 +51,8 @@
             <div class="price"> <span class="currency">₹</span> <span class="value">2500</span></div>
             <!-- end price -->
             <ul>
-              <li class="active"> <i class="far fa-check-circle"></i>Registrants can participate in any single event
-                only.</li>
               <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
+              <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in the registered event only.</li>
               <li class="active"> <i class="far fa-check-circle"></i>1 Team per college </li>
               {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
 
@@ -67,7 +66,7 @@
       </div>
       <!-- end col-3 -->
       <!-- end col-3 -->
-      <div class="col-xl-3 col-lg-6 col-md-6">
+      {{-- <div class="col-xl-3 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="0.5">
           <div class="price-box featured">
             <h5>Concert <br> PASS</h5>
@@ -87,8 +86,50 @@
           <!-- end price-box -->
         </div>
         <!-- end data-scroll -->
-      </div>
+      </div> --}}
       <!-- end col-3 -->
+      
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div data-scroll data-scroll-speed="0.5">
+          <div class="price-box featured">
+            <h5>Premium <br> PASS</h5>
+            <div class="price"> <span class="currency">₹</span> <span class="value">5500</span></div>
+            <!-- end price -->
+            <ul>
+              <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
+              <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in the registered event only.</li>
+              <li class="active"> <i class="far fa-check-circle"></i>Concert Pass is given to the 20 members of the team including team lead.</li>
+              <li class="active"> <i class="far fa-check-circle"></i>1 Team per college </li>
+              {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
+
+            </ul>
+            <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
+                  class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
+          </div>
+          <!-- end price-box -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div data-scroll data-scroll-speed="- 0.5">
+          <div class="price-box">
+            <h5>Concert <br> PASS</h5>
+            <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
+            <!-- end price -->
+            <ul>
+              <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
+                <small></small>
+              </li>
+              <li class="fa-active">Registrants cannot participate in other Events</li>
+              <li class="fa-active fa-circle-xmark">Individual Registeration for the concert</li>
+
+            </ul>
+            <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
+                  class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
+          </div>
+          <!-- end price-box -->
+        </div>
         <!-- end data-scroll -->
       </div>
 

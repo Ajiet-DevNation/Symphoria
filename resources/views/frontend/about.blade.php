@@ -35,8 +35,20 @@
             --}}
             {{-- <iframe src="https://publuu.com/flip-book/96773/265557/page/2?embed" width="70%" height="600rem"
                 frameborder="0" allowfullscreen="" class="publuuflip" scrolling="yes"></iframe> --}}
-            <iframe src="https://publuu.com/flip-book/832404/1835020" width="70%" height="600rem" frameborder="0"
-                allowfullscreen="" class="publuuflip" scrolling="yes"></iframe>
+
+
+
+
+
+            {{-- <iframe src="https://publuu.com/flip-book/832404/1835020" width="70%" height="600rem" frameborder="0"
+                allowfullscreen="" class="publuuflip" scrolling="yes"></iframe> --}}
+
+
+
+
+
+
+
             {{-- <iframe
                 src="https://www.flipbookpdf.net/web/site/3c032a88acbf858332a96132115603cf18a2d5f7202503.pdf.html"
                 width="900" height="637" frameborder="0" webkitAllowFullScreen mozallowfullscreen

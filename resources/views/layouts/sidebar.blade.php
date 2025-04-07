@@ -124,12 +124,12 @@
                 @endif
                 @endauth
 
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="https://adminlte.io/docs/3.1//index.html" target="_blank" class="nav-link">
                         <i class="nav-icon icon ion-md-help-circle-outline"></i>
                         <p>Docs</p>
                     </a>
-                </li>
+                </li> --}}
 
                 @auth
                 <li class="nav-item">
