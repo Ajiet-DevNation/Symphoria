@@ -195,7 +195,7 @@
   if ($(".events-slider-images")[0]) {
     events_slider_images.controller.control = event_slider_content;
     event_slider_content.controller.control = events_slider_images;
-  } else {}
+  } else { }
 
   // DATA BACKGROUND IMAGE
   var pageSection = $("*");
@@ -270,7 +270,19 @@
       //console.log('show');
       header.classList.remove('unpinned');
       header.classList.add('pinned');
+      header.classList.add("dark");
       hidden = false;
+    }
+    if (window.location.pathname === "/" || window.location.pathname === "/index.blade.php") {
+      scroll.on("scroll", (instance) => {
+        const scrollY = instance.scroll.y;
+        if (scrollY > 100) {
+          header.classList.add("dark"); // Add dark background
+        } else {
+          header.classList.remove("dark"); // Keep it transparent at top
+          header.classList.remove("transparent");
+        }
+      });
     }
 
 
