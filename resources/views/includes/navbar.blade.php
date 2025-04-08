@@ -20,7 +20,7 @@
         Login </a> </div>
     @else
      @if (!Auth::guest())
-          <a href="{{route('profile')}}" class="navbar-button-logout"> <img src="frontend/images/user-regular.png"  width="29px" height="30px"> </a>
+          <a href="{{route('profile')}}" class="navbar-button-logout"> <img src="{{ asset('frontend/images/user-regular.png') }}"  width="29px" height="30px"> </a>
 
     @else
       @if (request() -> is('login'))

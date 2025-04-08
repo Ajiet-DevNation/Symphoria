@@ -41,6 +41,7 @@ class UserUpdateRequest extends FormRequest
             'payment_screenshot' => ['image', 'max:1024'],
             'id_card' => ['image', 'max:1024'],
             'is_paid' => ['nullable', 'boolean'],
+            'premium_pass_concert' => ['nullable', 'boolean'],
             'roles' => 'array',
         ];
     }

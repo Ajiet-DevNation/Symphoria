@@ -27,8 +27,17 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                             style="width:10rem;height:10rem;border:0.4rem solid #ffffff;border-radius:5rem">
                         </lord-icon>
                         <h5 class="my-3 text-white">{{ Auth::user()->name }}</h5>
-                        <p class="text-white mb-4">{{ Auth::user()->uid }}</p>
-                        <p class="text-white mb-4">{{ Auth::user()->transaction_id }}</p>
+                        <p class="text-white">{{ Auth::user()->college_name }}</p>
+                        <p class="text-white mb-4"><b>Pass Type:</b>
+                            @if (Auth::user()->pass_type == 'concert')
+                                Concert Pass <i class="far fa-check-circle text-white"></i>
+                            @elseif (Auth::user()->pass_type == 'premium')
+                                Premium Pass <i class="far fa-check-circle text-white"></i>
+                            @else
+                                Event Pass <i class="far fa-times-circle"></i>
+                            @endif
+                        </p>
+                        {{-- <p class="text-white mb-4">{{ Auth::user()->transaction_id }}</p> --}}
                     </div>
                 </div>
                 <div class="card mb-4 mb-lg-0 shadow-lg profile-box text-center">
@@ -100,6 +109,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                         </div> --}}
                     </div>
                 </div>
+                @if ( Auth::user()->pass_type != 'concert')
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card mb-4 mb-md-0 shadow-lg  profile-box">
@@ -109,7 +119,6 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                                     <div class="col-8" style="margin-bottom: 0rem; display:inline;">
                                         Events Registered
                                     </div>
-
 
                                     <div class="col-4">
                                         @if (Auth::user()->is_paid)
@@ -159,6 +168,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                         </div>
                     </div>
                 </div>
+                @endif
 
                 <div class="row mt-4 justify-content-center">
                     <form id="logout-form" class="text-center" action="{{ route('logout') }}" method="POST">
