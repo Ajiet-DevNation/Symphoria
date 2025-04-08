@@ -77,7 +77,7 @@
                         <tr>
                             <td>
                                 <x-partials.thumbnail
-                                    src="{{ $eventOrganizer->img ? \Storage::url($eventOrganizer->img) : '' }}"
+                                    src="{{ $eventOrganizer->img ? Storage::disk('s3')->url($eventOrganizer->img) : '' }}"
                                 />
                             </td>
                             <td>{{ $eventOrganizer->phone ?? '-' }}</td>

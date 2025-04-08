@@ -134,7 +134,7 @@
             <div class="col-lg-3 col-md-6">
                 <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
                     <div class="speaker">
-                        <figure><img src="{{ $organizer->img ? Storage::url($organizer->img) : '' }}" alt="Image">
+                        <figure><img src="{{ $organizer->img ? Storage::disk('s3')->url($organizer->img) : '' }}" alt="Image">
                             <figcaption>
                                 <ul>
                                     <li><a href="{{ 'mailto:' . $organizer->email }}"><i class="fab fa-google"></i></a>

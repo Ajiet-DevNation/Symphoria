@@ -49,7 +49,12 @@ class SponserController extends Controller
 
         $validated = $request->validated();
         if ($request->hasFile('img')) {
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store('sponsers', 
+            [
+                "disk" => 's3',
+                "visibility" => 'public',
+            ]
+        );
         }
 
         $sponser = Sponser::create($validated);
@@ -97,8 +102,10 @@ class SponserController extends Controller
             if ($sponser->img) {
                 Storage::delete($sponser->img);
             }
-
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store('sponsers', [
+                "disk" => 's3',
+                "visibility" => 'public',
+            ]);
         }
 
         $sponser->update($validated);

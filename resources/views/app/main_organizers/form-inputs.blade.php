@@ -3,7 +3,7 @@
 <div class="row">
     <x-inputs.group class="col-sm-12">
         <div
-            x-data="imageViewer('{{ $editing && $mainOrganizer->img ? \Storage::url($mainOrganizer->img) : '' }}')"
+            x-data="imageViewer('{{ $editing && $mainOrganizer->img ? Storage::disk('s3')->url($mainOrganizer->img) : '' }}')"
         >
             <x-inputs.partials.label
                 name="img"

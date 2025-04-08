@@ -15,7 +15,7 @@
                 <div class="mb-4">
                     <h5>@lang('crud.main_organizers.inputs.img')</h5>
                     <x-partials.thumbnail
-                        src="{{ $mainOrganizer->img ? \Storage::url($mainOrganizer->img) : '' }}"
+                        src="{{ $mainOrganizer->img ? Storage::disk('s3')->url($mainOrganizer->img) : '' }}"
                         size="150"
                     />
                 </div>

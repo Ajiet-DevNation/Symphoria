@@ -47,17 +47,17 @@
                 <div class="mb-4">
                     <h5>@lang('crud.users.inputs.payment_screenshot')</h5>
                     <x-partials.thumbnail
-                        src="{{ $user->payment_screenshot ? \Storage::url($user->payment_screenshot) : '' }}"
+                        src="{{ $user->payment_screenshot ? \Storage::disk('s3')->url($user->payment_screenshot) : '' }}"
                         size="150"
                     />
                 </div>
-                <div class="mb-4">
+                {{-- <div class="mb-4">
                     <h5>@lang('crud.users.inputs.id_card')</h5>
                     <x-partials.thumbnail
                         src="{{ $user->id_card ? \Storage::url($user->id_card) : '' }}"
                         size="150"
                     />
-                </div>
+                </div> --}}
                 <div class="mb-4">
                     <h5>@lang('crud.users.inputs.is_paid')</h5>
                     <span>{{ $user->is_paid ?? '-' }}</span>

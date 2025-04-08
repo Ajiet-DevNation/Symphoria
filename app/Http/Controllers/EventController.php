@@ -52,7 +52,12 @@ class EventController extends Controller
 
         $validated = $request->validated();
         if ($request->hasFile('img')) {
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store('events', 
+            [
+                "disk" => 's3',
+                "visibility" => 'public',
+            ]
+        );
         }
 
         $event = Event::create($validated);
@@ -103,7 +108,10 @@ class EventController extends Controller
                 Storage::delete($event->img);
             }
 
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store('events', [
+                "disk" => 's3',
+                "visibility" => 'public',
+            ]);
         }
 
         $event->update($validated);
