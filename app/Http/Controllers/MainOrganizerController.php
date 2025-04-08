@@ -52,7 +52,12 @@ class MainOrganizerController extends Controller
 
         $validated = $request->validated();
         if ($request->hasFile('img')) {
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store('mainOrganisers', 
+            [
+                "disk" => 's3',
+                "visibility" => 'public',
+            ]
+        );
         }
 
         $mainOrganizer = MainOrganizer::create($validated);
@@ -103,7 +108,10 @@ class MainOrganizerController extends Controller
                 Storage::delete($mainOrganizer->img);
             }
 
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store('mainOrganisers', [
+                "disk" => 's3',
+                "visibility" => 'public',
+            ]);
         }
 
         $mainOrganizer->update($validated);

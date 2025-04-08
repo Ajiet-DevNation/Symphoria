@@ -35,7 +35,7 @@
                             <div class="col-lg-6">
                                 <div data-scroll data-scroll-speed="0.5">
                                     <figure class="side-image"> <img
-                                            src="{{ $sponsor->img ? Storage::url($sponsor->img) : '' }}" alt="Image">
+                                            src="{{ $sponsor->img ? Storage::disk('s3')->url($sponsor->img) : '' }}" alt="Image">
                                     </figure>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="col-lg-6">
                                 <div data-scroll data-scroll-speed="0.5">
                                     <figure class="side-image"> <img
-                                            src="{{ $sponsor->img ? Storage::url($sponsor->img) : '' }}" alt="Image">
+                                            src="{{ $sponsor->img ? Storage::disk('s3')->url($sponsor->img) : '' }}" alt="Image">
                                     </figure>
                                 </div>
                                 <!-- end data-scroll -->

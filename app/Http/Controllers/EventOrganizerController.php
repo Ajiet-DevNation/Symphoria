@@ -55,7 +55,13 @@ class EventOrganizerController extends Controller
 
         $validated = $request->validated();
         if ($request->hasFile('img')) {
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store(
+                'eventOrganisers',
+                [
+                    'disk' => 's3',
+                    'visibility' => 'public',
+                ]
+            );
         }
 
         $eventOrganizer = EventOrganizer::create($validated);
@@ -111,7 +117,13 @@ class EventOrganizerController extends Controller
                 Storage::delete($eventOrganizer->img);
             }
 
-            $validated['img'] = $request->file('img')->store('public');
+            $validated['img'] = $request->file('img')->store(
+                'eventOrganisers',
+                [
+                    'disk' => 's3',
+                    'visibility' => 'public',
+                ]
+            );
         }
 
         $eventOrganizer->update($validated);

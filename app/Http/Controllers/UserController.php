@@ -58,7 +58,10 @@ class UserController extends Controller
         if ($request->hasFile('payment_screenshot')) {
             $validated['payment_screenshot'] = $request
                 ->file('payment_screenshot')
-                ->store('public');
+                ->store('users/payment_screenshots', [
+                    "disk" => 's3',
+                    "visibility" => 'public',
+                ]);
         }
 
         if ($request->hasFile('id_card')) {
@@ -125,7 +128,12 @@ class UserController extends Controller
 
             $validated['payment_screenshot'] = $request
                 ->file('payment_screenshot')
-                ->store('public');
+                ->store('users/payment_screenshots',
+                [
+                    "disk" => 's3',
+                    "visibility" => 'public',
+                ]
+            );
         }
 
         if ($request->hasFile('id_card')) {

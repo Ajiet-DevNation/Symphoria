@@ -74,7 +74,7 @@
                         <tr>
                             <td>
                                 <x-partials.thumbnail
-                                    src="{{ $mainOrganizer->img ? \Storage::url($mainOrganizer->img) : '' }}"
+                                    src="{{ $mainOrganizer->img ? Storage::disk('s3')->url($mainOrganizer->img) : '' }}"
                                 />
                             </td>
                             <td>{{ $mainOrganizer->name ?? '-' }}</td>

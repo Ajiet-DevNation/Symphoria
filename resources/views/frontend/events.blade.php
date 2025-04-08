@@ -33,7 +33,7 @@
 
                         <div class="event-box m-4">
 
-                            <img src="{{$event->img ? Storage::url($event->img) : '' }}" alt="Image" />
+                            <img src="{{$event->img ? Storage::disk("s3")->url($event->img) : '' }}" alt="Image" />
 
                             <div class="content-box">
                                 <span>{{$event->date->isoFormat('DD-MM-YYYY')}}</span>
