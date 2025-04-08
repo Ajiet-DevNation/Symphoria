@@ -31,6 +31,7 @@ class User extends Authenticatable
         'college_name',
         'pass_type',
         'id_card',
+        'premium_pass_concert',
     ];
 
     protected $searchableFields = ['*'];

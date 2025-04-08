@@ -24,18 +24,13 @@ return new class extends Migration
             $table->mediumText('phone')->nullable();
             $table->integer('credits')->default(0)->nullable();
             $table->mediumText('usn')->nullable();
-            $table
-                ->boolean('is_paid')
-                ->default(0)
-                ->nullable();
+            $table->boolean('is_paid')->default(0)->nullable();
             $table->longText('payment_screenshot')->nullable();
             $table->mediumText('transaction_id')->nullable();
-            $table
-                ->enum('pass_type', ['event', 'concert', 'premium'])
-                ->default('concert')
-                ->nullable();
+            $table->enum('pass_type', ['event', 'concert', 'premium'])->default('concert')->nullable();
             $table->mediumText('college_name')->nullable();
             $table->longText('id_card')->nullable();
+            $table->boolean('premium_pass_concert')->default(0)->nullable();
             $table->timestamps();
         });
     }

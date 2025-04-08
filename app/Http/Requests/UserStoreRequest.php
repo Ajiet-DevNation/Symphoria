@@ -38,6 +38,7 @@ class UserStoreRequest extends FormRequest
             'id_card' => ['image', 'max:1024'],
             'is_paid' => ['nullable', 'boolean'],
             'roles' => 'array',
+            'premium_pass_concert' => ['nullable', 'boolean'],
         ];
     }
 }
