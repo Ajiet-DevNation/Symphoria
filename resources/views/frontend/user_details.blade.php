@@ -103,7 +103,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                         </div>
                     </div>
                 </div>
-                @if (! Auth::user()->pass_type == 'concert')
+                @if (! $user->pass_type == 'concert')
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card mb-4 mb-md-0 shadow-lg  profile-box">
