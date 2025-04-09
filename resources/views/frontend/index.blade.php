@@ -44,7 +44,7 @@
       </div>
       <!-- end col-12 -->
 
-      <div class="col-xl-3 col-lg-6 col-md-6">
+      <div class="col-xl-4 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="-0.5">
           <div class="price-box">
             <h5>Event <br> PASS</h5>
@@ -89,12 +89,12 @@
       </div> --}}
       <!-- end col-3 -->
       
-      <div class="col-xl-3 col-lg-6 col-md-6">
+      <!-- <div class="col-xl-3 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="0.5">
           <div class="price-box featured">
             <h5>Premium <br> PASS</h5>
             <div class="price"> <span class="currency">₹</span> <span class="value">5500</span></div>
-            <!-- end price -->
+            {{-- <!-- end price --> --}}
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
               <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in the registered event only.</li>
@@ -106,24 +106,22 @@
             <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
                   class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
           </div>
-          <!-- end price-box -->
+          {{-- <!-- end price-box --> --}}
         </div>
-        <!-- end data-scroll -->
-      </div>
+        {{-- <!-- end data-scroll --> --}}
+      </div> -->
 
-      <div class="col-xl-3 col-lg-6 col-md-6">
+      <div class="col-xl-4 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="- 0.5">
-          <div class="price-box">
+          <div class="price-box featured">
             <h5>Concert <br> PASS</h5>
             <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
             <!-- end price -->
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
-                <small></small>
               </li>
-              <li class="fa-active">Registrants cannot participate in other Events</li>
-              <li class="fa-active fa-circle-xmark">Individual Registeration for the concert</li>
-
+              <li class="fa-active"><i class="far fa-times-circle"></i> Registrants cannot participate in other Events</li>
+              <li><i class="far fa-times-circle"></i> Individual Registeration for the concert</li>
             </ul>
             <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
                   class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
@@ -372,7 +370,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div data-scroll data-scroll-speed="0.5">
-          <img src="frontend/images/logo2025Full.png" style="height: 600px; width: auto">
+          <img src="frontend/images/logo2025Full.png" style="height: 470px; width: auto">
 
           {{-- <video loop class="side-image" autoplay muted>
             <source src="frontend/images/celebrateAakar.mp4" type="video/mp4">

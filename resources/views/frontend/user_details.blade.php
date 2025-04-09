@@ -43,6 +43,13 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                             <i class="far fa-times-circle"></i>
                             @endif
                         </p>
+                        <p class="text-white"><strong>Pass Type :</strong>
+                            @if ($user->pass_type == 'concert')
+                            Concert Pass
+                            @else
+                            Event Pass
+                            @endif
+                        </p>
                         
                         {{-- <p class="text-white">+91 {{ $user->phone }}</p>
                         <p class="text-white mb-4">{{ $user->college_name }}</p>

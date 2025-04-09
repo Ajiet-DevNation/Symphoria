@@ -34,12 +34,17 @@
                         <ul class="infos">
                             <li>
                                 <figure><img src="{{ asset('frontend/images/icon-time.png') }}" alt="Image"></figure>
-                                {{ $event->date->isoFormat('hh:mm a') }}<br>
+                                <span class="ms-2 mt-1" >
+                                    {{ $event->date->isoFormat('hh:mm a') }}<br>
+                                </span>
                             </li>
                             @if ($event->location != null)
                             <li>
                                 <figure><img src="{{ asset('frontend/images/icon-host.svg') }}" alt="Image" height="26">
-                                </figure>{{ $event->location }}
+                                </figure>
+                                <span class="mt-1">
+                                    {{ $event->location }}
+                                </span>
                             </li>
                             @endif
                             @if ($event->is_registration)
