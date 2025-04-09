@@ -78,28 +78,32 @@
                                 @foreach ($event->eventOrganizers as $organizer)
                                 <div class="col-lg-3 col-md-6">
                                     {{-- <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}"> --}}
-                                        <div data-scroll data-scroll-speed="0.5">
-                                            <div class="speaker">
-                                                <figure><img
-                                                        src="{{ $organizer->img ? Storage::disk('s3')->url($organizer->img) : '' }}"
-                                                        alt="Image">
-                                                    <figcaption>
-                                                        <ul>
-                                                            <li><a href="{{ 'mailto:' . $organizer->email }}"><i
-                                                                        class="fab fa-google"></i></a>
-                                                            </li>
-                                                            <li><a href="{{ 'tel:+91 ' . $organizer->phone }}"><i
-                                                                        class="fa fa-phone"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="content-box">
-                                                    <h4>{{ $organizer->name }}</h4>
-                                                    <small>{{ $organizer->position }}</small>
+                                        {{-- <div > --}}
+                                            <div data-scroll data-scroll-speed="0.5">
+                                                <div class="speaker">
+                                                    <figure><img
+                                                            src="{{ $organizer->img ? Storage::disk('s3')->url($organizer->img) : '' }}"
+                                                            alt="Image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="{{ 'mailto:' . $organizer->email }}"><i
+                                                                            class="fab fa-google"></i></a>
+                                                                </li>
+                                                                <li><a href="{{ 'tel:+91 ' . $organizer->phone }}"><i
+                                                                            class="fa fa-phone"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="content-box">
+                                                        <h4>{{ $organizer->name }}</h4>
+                                                        <small>{{ $organizer->position }}</small>
+                                                        <small>mail: {{ $organizer->email }}</small>
+                                                        <small>Phone: {{ $organizer->phone }}</small>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        {{-- </div> --}}
                                     </div>
                                     @endforeach
                                 </div>
@@ -109,7 +113,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 @endsection
