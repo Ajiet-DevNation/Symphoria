@@ -82,7 +82,7 @@
                                         <div data-scroll data-scroll-speed="0.5">
                                             <div class="speaker">
                                                 <figure><img
-                                                        src="{{ $organizer->img ? Storage::disk('s3')->url($organizer->img) : '' }}"
+                                                        {{-- src="{{ $organizer->img ? Storage::disk('s3')->url($organizer->img) : '' }}" --}}
                                                         alt="Image">
                                                     <figcaption>
                                                         <ul>
