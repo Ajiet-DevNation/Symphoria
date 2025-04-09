@@ -23,8 +23,7 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 <div data-scroll data-scroll-speed="0.5">
-                    <figure class="image-box justify-content-center"> <img src="{{ $event->img ? Storage::disk("
-                            s3")->url($event->img) : '' }}" alt="Image" /> </figure>
+                    <figure class="image-box justify-content-center"> <img src="{{ $event->img ? Storage::disk("s3")->url($event->img) : '' }}" alt="Image" /> </figure>
                 </div>
             </div>
             <div class="col-xl-10">
