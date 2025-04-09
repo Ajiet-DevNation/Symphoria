@@ -49,7 +49,7 @@
             <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the Pass Type</option>
             <option value="event" {{ $selected == "event" ? 'selected' : '' }} >Event Pass</option>
             <option value="concert" {{ $selected == "concert" ? 'selected' : '' }} >Concert Pass</option>
-            <option value="premium" {{ $selected == "premium" ? 'selected' : '' }} >Premium Pass</option>
+            {{-- <option value="premium" {{ $selected == "premium" ? 'selected' : '' }} >Premium Pass</option> --}}
             {{-- <option value="AJIET" {{ $selected == "AJIET" ? 'selected' : '' }} >AJIET Pass</option> --}}
         </x-inputs.select>
     </x-inputs.group>

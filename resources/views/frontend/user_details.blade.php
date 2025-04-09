@@ -13,6 +13,7 @@
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 @endphp
 @section('content')
+
 <section style="background-color: #eee; mt-4">
     <div class="container p-5 mt-5">
         <div class="row">
@@ -26,6 +27,55 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                 </nav>
             </div>
         </div>
+        <!-- Button trigger modal -->
+{{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> --}}
+{{-- <button type="button" class="btn btn-primary">
+    Launch demo modal
+  </button> --}}
+  @if (session('errors'))
+  <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+    <strong>Failed !! </strong> {{ session('errors') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  @endif
+  @if (session('success'))
+  <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+    <strong>Success !! </strong>{{ session('success') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  @endif
+@if (Auth::user()->isSuperAdmin() && !$user->concertEntry()->where('user_id', $user->id)->exists() && ($user->pass_type == 'concert' || $user->premium_pass_concert == 1))
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        }, 2000); 
+    });
+</script>
+@endif
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Concert Entry</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          By clicking confirm, you are verifying the concert entry for <strong>{{ $user->name }}</strong> at {{ now()->setTimezone('Asia/Kolkata')->format('d-m-Y h:i:s A') }} IST. <br>
+          <strong>Verified By:</strong> {{ Auth::user()->name }} <br>
+        </div>
+        <div class="modal-footer">
+          {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> --}}
+          <form action="{{ route('markConcertEntry', ['id' => $user->id, 'time' => now(), 'verifedBy' => Auth::user()->name]) }}" method="POST">
+            @csrf
+            <button type="submit" class="btn btn-primary p-2 pt-0 pb-0" >Confirm</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
         <div class="row">
             <div class="mt-4 col-lg-4">
                 <div class="card mb-4  profile-card-background" style="border: none ;">
@@ -38,6 +88,13 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                         <h5 class="my-3 text-white">{{ $user->name }}</h5>
                         <p class="text-white">Concert Registered:
                             @if ($user->pass_type == 'concert' || $user->premium_pass_concert == 1)
+                            <i class="far fa-check-circle text-white"></i>
+                            @else
+                            <i class="far fa-times-circle"></i>
+                            @endif
+                        </p>
+                        <p class="text-white"> Checked In for Concert:
+                            @if ($user->concertEntry()->where('user_id', $user->id)->exists() )
                             <i class="far fa-check-circle text-white"></i>
                             @else
                             <i class="far fa-times-circle"></i>
@@ -67,7 +124,6 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                     </div>
                 </div>
             </div>
-
             <div class="detail-card col-lg-8 mt-4 ">
 
                 <div class="card mb-4 shadow-lg  profile-box">
@@ -75,10 +131,10 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-3">
-                                <p class="mb-0">USN</p>
+                                <p class="mb-0">Name</p>
                             </div>
                             <div class="col-sm-9">
-                                <p class="text-muted mb-0">{{ $user->usn }}</p>
+                                <p class="text-muted mb-0">{{ $user->name}}</p>
                             </div>
                         </div>
                         <hr>
@@ -88,6 +144,24 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                             </div>
                             <div class="col-sm-9">
                                 <p class="text-muted mb-0">{{ $user->email }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Phone number</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ $user->phone}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">USN</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ $user->usn }}</p>
                             </div>
                         </div>
                         <hr>

@@ -52,4 +52,8 @@ class User extends Authenticatable
     {
         return $this->hasRole('super-admin');
     }
+
+    public function concertEntry(){
+        return $this->hasMany(ConcertEntry::class);
+    }
 }

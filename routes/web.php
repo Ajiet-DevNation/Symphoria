@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ConcertController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -59,6 +60,7 @@ Route::get('/export/users/unpaid',[HomeController::class,'exportUnPaidUsers'])->
 Route::middleware('auth')
     ->group(function(){
         Route::get('/profile',[HomeController::class,'profile'])->name('profile');
+        Route::post('/mark-concert-entry/{id}/{time}/{verifedBy}',[ConcertController::class,'store'])->name('markConcertEntry');
     });
 
 Route::prefix('/admin')
