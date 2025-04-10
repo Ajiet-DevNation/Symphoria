@@ -55,7 +55,6 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
       });
   </script>
   @endif
-  @endauth
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -78,6 +77,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
       </div>
     </div>
   </div>
+  @endauth
         <div class="row">
             <div class="mt-4 col-lg-4">
                 <div class="card mb-4  profile-card-background" style="border: none ;">
