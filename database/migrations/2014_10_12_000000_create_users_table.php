@@ -27,7 +27,7 @@ return new class extends Migration
             $table->boolean('is_paid')->default(0)->nullable();
             $table->longText('payment_screenshot')->nullable();
             $table->mediumText('transaction_id')->nullable();
-            $table->enum('pass_type', ['event', 'concert'])->default('concert')->nullable();
+            $table->enum('pass_type', ['event', 'premium' ,'concert'])->default('concert')->nullable();
             $table->mediumText('college_name')->nullable();
             $table->longText('id_card')->nullable();
             $table->boolean('premium_pass_concert')->default(0)->nullable();
