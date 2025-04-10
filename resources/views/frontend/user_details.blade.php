@@ -44,16 +44,18 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   @endif
-@if (Auth::user()->isSuperAdmin() && !$user->concertEntry()->where('user_id', $user->id)->exists() && ($user->pass_type == 'concert' || $user->premium_pass_concert == 1))
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        setTimeout(function () {
-            const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-            myModal.show();
-        }, 2000); 
-    });
-</script>
-@endif
+  @auth
+  @if (Auth::user()->isSuperAdmin() && !$user->concertEntry()->where('user_id', $user->id)->exists() && ($user->pass_type == 'concert' || $user->premium_pass_concert == 1))
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          setTimeout(function () {
+              const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+              myModal.show();
+          }, 2000); 
+      });
+  </script>
+  @endif
+  @endauth
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
