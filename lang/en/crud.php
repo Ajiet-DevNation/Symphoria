@@ -188,6 +188,19 @@ return [
             'event_id' => 'Event',
         ],
     ],
+    'concert_entries' => [
+        'name' => 'Concert Entries',
+        'index_title' => 'Concert Entries List',
+        'new_title' => 'New Concert Entry',
+        'create_title' => 'Create Concert Entry',
+        'edit_title' => 'Edit Concert Entry',
+        'show_title' => 'Show Concert Entry',
+        'inputs' => [
+            'user_id' => 'User',
+            'time' => 'Time',
+            'verified_by' => 'Verified By',
+        ],
+    ],
 
     'event_type_events' => [
         'name' => 'EventType Events',

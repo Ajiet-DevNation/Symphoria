@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ConcertController;
+use App\Http\Controllers\ConcertEntryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -78,4 +79,5 @@ Route::prefix('/admin')
         );
         Route::resource('main-organizers', MainOrganizerController::class);
         Route::resource('event-organizers', EventOrganizerController::class);
+        Route::resource('concert-entries', ConcertEntryController::class);
     });
