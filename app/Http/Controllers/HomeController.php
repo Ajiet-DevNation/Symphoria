@@ -110,7 +110,8 @@ class HomeController extends Controller
 
     public function user_details(Request $request)
     {
-        $user = User::where('id', $request->id)->first();
+        $user = User::with('concertEntry')->where('id', $request->id)->first();
+        // dd($user->concertEntry);
         // dd($user);
         if ($user) {
             return view('frontend.user_details', compact('user'));

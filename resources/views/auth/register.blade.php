@@ -148,7 +148,7 @@
                                         <option disabled>Select Pass</option>
                                         <option value="event" {{ old('pass_type') == 'event' ? 'selected' : '' }}>Event Pass - Single Event</option>
                                         <option value="concert" {{ old('pass_type') == 'concert' ? 'selected' : '' }}>Concert Pass </option>
-                                        <option value="premium" {{ old('pass_type') == 'premium' ? 'selected' : '' }}>Premium Pass </option>
+                                        {{-- <option value="premium" {{ old('pass_type') == 'premium' ? 'selected' : '' }}>Premium Pass </option> --}}
                                     </select> 
                                     @error('pass_type')
                                         <span class="invalid-feedback" role="alert">
@@ -170,9 +170,9 @@
                                         @endforeach
                                     </select>
                                 </div>
-                                <p class="mt-2 concert-pass-text">
+                                {{-- <p class="mt-2 concert-pass-text">
                                     <b>Note: Concert Pass is given to the 20 members of the team including team lead.</b>
-                                </p>
+                                </p> --}}
                                 {{-- <div class="col-md-12 mt-3 select-mega-event-div">
                                     <label for="">Select Mega/Gaming Events <small class="text-muted">(Payment is on-spot)</small></label>
                                     <select id="megaID" name="events[]" class="form-select select-mega-event"
@@ -197,7 +197,7 @@
                                     <h1 class="scan-heading">PAY</h1>
                                     <h1 class="scan-heading pay-2500">₹2500</h1>
                                     <h1 class="scan-heading pay-150">₹150</h1>
-                                    <h1 class="scan-heading pay-300">₹5500</h1>
+                                    {{-- <h1 class="scan-heading pay-300">₹5500</h1> --}}
 
 
                                 </div>

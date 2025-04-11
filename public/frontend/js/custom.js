@@ -1,9 +1,11 @@
 function clearEvents(type) {
     if (type == "event") {
         $(".select-multiple-event").val(null).trigger("change");
-    } else if (type == "premium") {
-        $(".select-single-event").val(null).trigger("change");
-    } else {
+    } 
+    // else if (type == "premium") {
+        // $(".select-single-event").val(null).trigger("change");
+    // } 
+    else {
         $(".select-multiple-event").val(null).trigger("change");
         $(".select-single-event").val(null).trigger("change");
     }
@@ -34,17 +36,19 @@ function showEvents() {
         $(".pay-150").hide();
         $(".pay-300").hide();
         $(".concert-pass-text").hide();
-    } else if (pass_type == "premium") {
-        $(".unselectable").prop("disabled", true);
-        $(".select-single-event-div").hide();
-        $(".select-mega-event-div").show();
-        $(".select-payment-text").show();
-        $(".pay-2500").hide();
-        $(".pay-150").hide();
-        $(".pay-300").show();
-        $(".concert-pass-text").show();
-        $(".select-limit-message").hide();
-    } else if (pass_type == "concert") {
+    } 
+    // else if (pass_type == "premium") {
+    //     $(".unselectable").prop("disabled", true);
+    //     $(".select-single-event-div").hide();
+    //     $(".select-mega-event-div").show();
+    //     $(".select-payment-text").show();
+    //     $(".pay-2500").hide();
+    //     $(".pay-150").hide();
+    //     $(".pay-300").show();
+    //     $(".concert-pass-text").show();
+    //     $(".select-limit-message").hide();
+    // } 
+    else if (pass_type == "concert") {
         $(".unselectable").prop("disabled", true);
         $(".select-mega-event-div").show();
         $(".select-payment-text").show();
@@ -74,17 +78,19 @@ $(".select-pass").on("change", function () {
         $(".pay-150").hide();
         $(".pay-300").hide();
         $(".concert-pass-text").hide();
-    } else if (this.value == "premium") {
-        clearEvents(this.value);
-        $(".unselectable").prop("disabled", true);
-        $(".select-single-event-div").show();
-        $(".select-payment-text").show();
-        $(".pay-150").hide();
-        $(".pay-2500").hide();
-        $(".pay-300").show();
-        $(".select-limit-message").hide();
-        $(".concert-pass-text").show();
-    } else if (this.value == "concert") {
+    } 
+    // else if (this.value == "premium") {
+    //     clearEvents(this.value);
+    //     $(".unselectable").prop("disabled", true);
+    //     $(".select-single-event-div").show();
+    //     $(".select-payment-text").show();
+    //     $(".pay-150").hide();
+    //     $(".pay-2500").hide();
+    //     $(".pay-300").show();
+    //     $(".select-limit-message").hide();
+    //     $(".concert-pass-text").show();
+    // } 
+    else if (this.value == "concert") {
         clearEvents(this.value);
         $(".unselectable").prop("disabled", true);
         $(".select-mega-event-div").show();
@@ -137,13 +143,13 @@ function validateRegistration() {
                 return false;
             }
             break;
-        case "premium":
-            console.log(selectEvents[1].value);
-            if (!selectEvents[1].value) {
-                alert("Please select an Event");
-                return false;
-            }
-            break;
+        // case "premium":
+        //     console.log(selectEvents[1].value);
+        //     if (!selectEvents[1].value) {
+        //         alert("Please select an Event");
+        //         return false;
+        //     }
+        //     break;
         case "concert":
             console.log(selectEvents[3].value);
             if (!selectEvents[3].value) {

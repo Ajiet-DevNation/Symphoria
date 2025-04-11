@@ -88,6 +88,14 @@
                                 </a>
                             </li>
                             @endcan
+                            @can('view-any', App\Models\ConcertEntry::class)
+                            <li class="nav-item">
+                                <a href="{{ route('concert-entries.index') }}" class="nav-link">
+                                    <i class="nav-icon icon ion-md-radio-button-off"></i>
+                                    <p>Concert Check-Ins</p>
+                                </a>
+                            </li>
+                            @endcan
                     </ul>
                 </li>
 

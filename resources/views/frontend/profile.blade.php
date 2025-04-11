@@ -28,13 +28,21 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
                         </lord-icon>
                         <h5 class="my-3 text-white">{{ Auth::user()->name }}</h5>
                         <p class="text-white">{{ Auth::user()->college_name }}</p>
-                        <p class="text-white mb-4"><b>Pass Type:</b>
+                        <p class="text-white mb-4"><b>Pass Type :</b>
                             @if (Auth::user()->pass_type == 'concert')
-                                Concert Pass <i class="far fa-check-circle text-white"></i>
+                                Concert Pass 
                             @elseif (Auth::user()->pass_type == 'premium')
-                                Premium Pass <i class="far fa-check-circle text-white"></i>
+                                Premium Pass 
                             @else
-                                Event Pass <i class="far fa-times-circle"></i>
+                                Event Pass
+                            @endif
+                        </p>
+                        <p class="text-white mb-4">
+                           <strong> Concert Entry</strong> : 
+                            @if (Auth::user()->pass_type == 'concert')
+                            Allowed <i class="far fa-check-circle"></i>
+                            @else
+                            Not Allowed <i class="far fa-times-circle"></i>
                             @endif
                         </p>
                         {{-- <p class="text-white mb-4">{{ Auth::user()->transaction_id }}</p> --}}

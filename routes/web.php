@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ConcertController;
+use App\Http\Controllers\ConcertEntryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -59,6 +61,7 @@ Route::get('/export/users/unpaid',[HomeController::class,'exportUnPaidUsers'])->
 Route::middleware('auth')
     ->group(function(){
         Route::get('/profile',[HomeController::class,'profile'])->name('profile');
+        Route::post('/mark-concert-entry/{id}/{time}/{verifedBy}',[ConcertController::class,'store'])->name('markConcertEntry');
     });
 
 Route::prefix('/admin')
@@ -76,4 +79,5 @@ Route::prefix('/admin')
         );
         Route::resource('main-organizers', MainOrganizerController::class);
         Route::resource('event-organizers', EventOrganizerController::class);
+        Route::resource('concert-entries', ConcertEntryController::class);
     });
