@@ -43,6 +43,8 @@
                 src="https://www.flipbookpdf.net/web/site/3c032a88acbf858332a96132115603cf18a2d5f7202503.pdf.html"
                 width="900" height="637" frameborder="0" webkitAllowFullScreen mozallowfullscreen
                 allowFullScreen></iframe> --}}
+
+                <iframe src="https://publuu.com/flip-book/848165/1860602/page/1?embed" width="70%" height="700rem" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" class="publuuflip"></iframe>
         </div>
         <!-- end row -->
     </div>

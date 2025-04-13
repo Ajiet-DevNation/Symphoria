@@ -17,13 +17,13 @@
                             <li class="reg__info__description">Team lead has to register.</li>
                             <li class="reg__info__description">One team per college.</li>
                         </ul>
-                        <li class="reg__info__title"><b>Premium Pass</b> </li>
+                        {{-- <li class="reg__info__title"><b>Premium Pass</b> </li>
                         <ul>
                             <li class="reg__info__description">Team lead has to register.</li>
                             <li class="reg__info__description">Team of the Registered Team Lead can participate in the registered event only.</li>
                             <li class="reg__info__description">Concert Pass is given to the 20 members of the team including team lead.</li>
                             <li class="reg__info__description">One team per college.</li>
-                        </ul>
+                        </ul> --}}
                         <li class="reg__info__title"><b>Concert Pass</b> </li>
                         <ul>
                             <li class="reg__info__description">Registrants can participate in concert only</li>
@@ -40,7 +40,7 @@
                     </ul>
                     
                 </div>
-                <a href="frontend/images/Aakar2023PassDetails.pdf" download="Aakar2023PassDetails.pdf" target="_blank" class="button-reg-pdf" style="display: flex;justify-content: center;" >Download Registration Details </a>
+                {{-- <a href="frontend/images/Aakar2023PassDetails.pdf" download="Aakar2023PassDetails.pdf" target="_blank" class="button-reg-pdf" style="display: flex;justify-content: center;" >Download Registration Details </a> --}}
                 
             </div>
             <div class="col-md-6 col-12" style="padding: 1em;">

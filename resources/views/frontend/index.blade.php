@@ -449,7 +449,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
-            <figcaption><a href="#">AJIEt</a></figcaption>
+            <figcaption><a href="https://www.ajiet.edu.in/" target="_blank">A J Institute of Engineering and Technology</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -459,7 +459,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/1.png') }}" alt="Image">
-            <figcaption><a href="#">Laxmi Memorial college of Nursing</a></figcaption>
+            <figcaption><a href="https://lmcn.in/" target="_blank">Laxmi Memorial college of Nursing</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -469,7 +469,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/2.png') }}" alt="Image">
-            <figcaption><a href="#">Laxmi Memorial college of Hotel Management</a></figcaption>
+            <figcaption><a href="https://lmchm.in/" target="_blank">Laxmi Memorial college of Hotel Management</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -483,7 +483,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/3.png') }}" alt="Image">
-            <figcaption><a href="#">A J Institute of Management (MSc)</a></figcaption>
+            <figcaption><a href="https://ajimmangalore.ac.in/" target="_blank">A J Institute of Management (MSc)</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -493,7 +493,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/4.png') }}" alt="Image">
-            <figcaption><a href="#">A J Institute of Management </a></figcaption>
+            <figcaption><a href="https://ajimmangalore.ac.in/" target="_blank">A J Institute of Management </a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -503,7 +503,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/5.png') }}" alt="Image">
-            <figcaption><a href="#">A J Institute of Dental Sciences</a></figcaption>
+            <figcaption><a href="https://ajids.edu.in/WebPages/index.aspx" target="_blank">A J Institute of Dental Sciences</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -513,7 +513,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/6.png') }}" alt="Image">
-            <figcaption><a href="#">A J Institute of Allied Health Science</a></figcaption>
+            <figcaption><a href="https://ajims.edu.in/Webpages/Index.aspx" target="_blank">A J Institute of Allied Health Science</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -523,7 +523,7 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/7.png') }}" alt="Image">
-            <figcaption><a href="#">A J Institute of Management Medical Sciences</a></figcaption>
+            <figcaption><a href="https://ajims.edu.in/Webpages/Index.aspx" target="_blank">A J Institute of Management Medical Sciences</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
