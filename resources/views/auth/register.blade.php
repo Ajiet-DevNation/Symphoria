@@ -203,7 +203,7 @@
                                 </div>
                                 <div class="col-md-12 col-lg-6 select-payment-text">
 
-                                    <img src="{{ asset('frontend/images/upi2023.jpg') }}" class="img-fluid"
+                                    <img src="{{ asset('frontend/images/qr2025.jpg') }}" class="img-fluid"
                                         alt="" srcset=""
                                         style="display: block; margin-left: auto; margin-right: auto;">
                                     <p class="text-center">ajids@cnrb</p>
