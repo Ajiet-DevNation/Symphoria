@@ -41,7 +41,6 @@
                     
                 </div>
                 {{-- <a href="frontend/images/Aakar2023PassDetails.pdf" download="Aakar2023PassDetails.pdf" target="_blank" class="button-reg-pdf" style="display: flex;justify-content: center;" >Download Registration Details </a> --}}
-                
             </div>
             <div class="col-md-6 col-12" style="padding: 1em;">
                 <div class="card shadow-lg mb-4 mt-3">
