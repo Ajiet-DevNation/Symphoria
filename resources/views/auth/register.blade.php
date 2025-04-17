@@ -7,10 +7,10 @@
                 <div class="card shadow-lg mt-3 mb-4 p-4">
                     <h2>Registration Info</h2>
                     <ul>
-                        <li class="reg__info__title"><b>Concert Registration</b> </li>
+                        {{-- <li class="reg__info__title"><b>Concert Registration</b> </li>
                         <ul>
                             <li class="reg__info__description">Registrants can attend the concert only by registering through concert pass </li>
-                        </ul>
+                        </ul> --}}
                         <li class="reg__info__title"><b>Event Pass</b> </li>
                         <ul>
                             <li class="reg__info__description">Registrants can participate in registered event only.</li>
@@ -35,7 +35,7 @@
                             <li class="reg__info__description">Soulful Sounds - 2500/- Per Team</li>
                             <li class="reg__info__description">Runway Royale - 2500/- Per Team </li>
                             <li class="reg__info__description">The Dance Affair - 2500/- Per Team</li>
-                            <li class="reg__info__description">Concert - 150/- Per Person</li>
+                            {{-- <li class="reg__info__description">Concert - 150/- Per Person</li> --}}
                         </ul>
                     </ul>
                     
