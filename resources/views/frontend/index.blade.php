@@ -110,7 +110,7 @@
         </div>
         {{-- <!-- end data-scroll --> --}}
       </div> -->
-
+{{-- 
       <div class="col-xl-4 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="- 0.5">
           <div class="price-box featured">
@@ -131,7 +131,7 @@
         <!-- end data-scroll -->
       </div>
 
-    </div>
+    </div> --}}
     <!-- end row -->
     <!-- end container -->
 </section>
