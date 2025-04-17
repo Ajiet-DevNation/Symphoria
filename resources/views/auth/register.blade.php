@@ -24,11 +24,11 @@
                             <li class="reg__info__description">Concert Pass is given to the 20 members of the team including team lead.</li>
                             <li class="reg__info__description">One team per college.</li>
                         </ul> --}}
-                        <li class="reg__info__title"><b>Concert Pass</b> </li>
+                        {{-- <li class="reg__info__title"><b>Concert Pass</b> </li>
                         <ul>
                             <li class="reg__info__description">Registrants can participate in concert only</li>
                             <li class="reg__info__description">Individual Registeration</li>
-                        </ul>
+                        </ul> --}}
                         <li class="reg__info__title"><b>Events at Symphoria 2025</b></li>
                         <ul>
                             <li class="reg__info__description">The Event Extravaganza - 2500/- Per Team</li>
@@ -146,7 +146,7 @@
                                         aria-label="Default select example">
                                         <option disabled>Select Pass</option>
                                         <option value="event" {{ old('pass_type') == 'event' ? 'selected' : '' }}>Event Pass - Single Event</option>
-                                        <option value="concert" {{ old('pass_type') == 'concert' ? 'selected' : '' }}>Concert Pass </option>
+                                        {{-- <option value="concert" {{ old('pass_type') == 'concert' ? 'selected' : '' }}>Concert Pass </option> --}}
                                         {{-- <option value="premium" {{ old('pass_type') == 'premium' ? 'selected' : '' }}>Premium Pass </option> --}}
                                     </select> 
                                     @error('pass_type')
@@ -195,7 +195,7 @@
                                     <h3 class="scan-sub-heading">AND</h3>
                                     <h1 class="scan-heading">PAY</h1>
                                     <h1 class="scan-heading pay-2500">₹2500</h1>
-                                    <h1 class="scan-heading pay-150">₹150</h1>
+                                    {{-- <h1 class="scan-heading pay-150">₹150</h1> --}}
                                     {{-- <h1 class="scan-heading pay-300">₹5500</h1> --}}
 
 
