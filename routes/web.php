@@ -27,10 +27,10 @@ use App\Models\Sponser;
 */
 
 Route::get('/', function () {
-    $sponsor = Sponser::all();
+    $sponsors = Sponser::all();
 
-    dd($sponsor);
-    return view('frontend.index');
+    // dd($sponsors);
+    return view('frontend.index', compact('sponsors'));
 })->name('index');
 
 Route::get('/about',[HomeController::class,'organizers']

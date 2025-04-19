@@ -15,7 +15,7 @@
                 <div class="mb-4">
                     <h5>@lang('crud.sponsers.inputs.img')</h5>
                     <x-partials.thumbnail
-                        src="{{ $sponser->img ? \Storage::url($sponser->img) : '' }}"
+                        src="{{ $sponser->img ? \Storage::disk('s3')->url($sponser->img) : '' }}"
                         size="150"
                     />
                 </div>
