@@ -13,6 +13,8 @@ use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\EventRegistrationController;
 use App\Http\Controllers\EventOrganizerController;
 use App\Http\Controllers\MainOrganizerController;
+use App\Models\Sponser;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +27,10 @@ use App\Http\Controllers\MainOrganizerController;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    $sponsors = Sponser::all();
+
+    // dd($sponsors);
+    return view('frontend.index', compact('sponsors'));
 })->name('index');
 
 Route::get('/about',[HomeController::class,'organizers']

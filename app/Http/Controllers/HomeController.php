@@ -64,7 +64,8 @@ class HomeController extends Controller
     public function organizers()
     {
         $organizers = MainOrganizer::orderBy('created_at', 'asc')->get();
-        return view('frontend.about', compact('organizers'));
+        $sponsors = Sponser::all();
+        return view('frontend.about', compact('organizers', 'sponsors'));
     }
     public function qrcode_scanner()
     {

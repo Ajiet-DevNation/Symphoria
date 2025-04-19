@@ -267,4 +267,84 @@
         </div>
     </div>
 </section> --}}
+
+<section class="content-section">
+    <div class="section-bg" data-background="{{ asset('frontend/images/section-bg02.png') }}" data-scroll
+      data-scroll-speed="1"></div>
+    <!-- end section-bg -->
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <div data-scroll data-scroll-speed="0.5">
+            <div class="section-title text-center">
+              {{-- <figure><img src="{{ asset('frontend/images/logo2025.png') }}" alt="Image"></figure> --}}
+              <h6>SPONSORS AND PROMOTERS</h6>
+              <h2>Our Sponsors</h2>
+            </div>
+            <!-- end section-title -->
+          </div>
+          <!-- end data-scroll -->
+        </div>
+        <!-- end col-12 -->
+        <div class="col-12"> <strong class="sponsor-title">Gold Sponsors</strong> </div>
+        <!-- end col-12 -->
+        @foreach ($sponsors as $sponsor)
+        @if ($sponsor->site == 'GOLD SPONSOR')
+        <div class="col-lg-2 col-md-3 col-6">
+          <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+            <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+              <figcaption>{{ $sponsor->name }}</figcaption>
+            </figure>
+            <!-- end sponsor-logo -->
+          </div>
+          <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        @endif
+        @endforeach
+        <div class="clearfix spacing-50"></div>
+        <!-- end clearfix -->
+        <div class="col-12"> <strong class="sponsor-title">Silver sponsors</strong> </div>
+  
+        @foreach ($sponsors as $sponsor)
+        @if ($sponsor->site == 'SILVER SPONSOR')
+        <div class="col-lg-2 col-md-3 col-6">
+          <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+            <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+              <figcaption>{{ $sponsor->name }}</figcaption>
+            </figure>
+            <!-- end sponsor-logo -->
+          </div>
+          <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        @endif
+        @endforeach
+        <!-- end col-2 -->
+       
+       
+        <div class="clearfix spacing-50"></div>
+        <!-- end clearfix -->
+        <div class="col-12"> <strong class="sponsor-title">Diamond sponsors</strong> </div>
+  
+        @foreach ($sponsors as $sponsor)
+        @if ($sponsor->site == 'DIAMOND SPONSOR')
+        <div class="col-lg-2 col-md-3 col-6">
+          <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+            <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+              <figcaption>{{ $sponsor->name }}</figcaption>
+            </figure>
+            <!-- end sponsor-logo -->
+          </div>
+          <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        @endif
+        @endforeach
+        <!-- end col-2 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
 @endsection

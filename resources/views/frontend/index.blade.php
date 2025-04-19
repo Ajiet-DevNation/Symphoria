@@ -52,7 +52,8 @@
             <!-- end price -->
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
-              <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in the registered event only.</li>
+              <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in
+                the registered event only.</li>
               <li class="active"> <i class="far fa-check-circle"></i>1 Team per college </li>
               {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
 
@@ -88,52 +89,56 @@
         <!-- end data-scroll -->
       </div> --}}
       <!-- end col-3 -->
-      
+
       <!-- <div class="col-xl-3 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="0.5">
           <div class="price-box featured">
             <h5>Premium <br> PASS</h5>
             <div class="price"> <span class="currency">₹</span> <span class="value">5500</span></div>
             {{-- <!-- end price --> --}}
-            <ul>
-              <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
-              <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in the registered event only.</li>
-              <li class="active"> <i class="far fa-check-circle"></i>Concert Pass is given to the 20 members of the team including team lead.</li>
-              <li class="active"> <i class="far fa-check-circle"></i>1 Team per college </li>
-              {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
+      <ul>
+        <li class="active"> <i class="far fa-check-circle"></i>Team Lead has to register </li>
+        <li class="active"> <i class="far fa-check-circle"></i>Team of the Registered Team Lead can participate in the
+          registered event only.</li>
+        <li class="active"> <i class="far fa-check-circle"></i>Concert Pass is given to the 20 members of the team
+          including team lead.</li>
+        <li class="active"> <i class="far fa-check-circle"></i>1 Team per college </li>
+        {{-- <li class="reg__info__description">Does not include a concert pass</li> --}}
 
-            </ul>
-            <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
-                  class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
-          </div>
-          {{-- <!-- end price-box --> --}}
-        </div>
-        {{-- <!-- end data-scroll --> --}}
-      </div> -->
-{{-- 
-      <div class="col-xl-4 col-lg-6 col-md-6">
-        <div data-scroll data-scroll-speed="- 0.5">
-          <div class="price-box featured">
-            <h5>Concert <br> PASS</h5>
-            <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
-            <!-- end price -->
-            <ul>
-              <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
-              </li>
-              <li class="fa-active"><i class="far fa-times-circle"></i> Registrants cannot participate in other Events</li>
-              <li><i class="far fa-times-circle"></i> Individual Registeration for the concert</li>
-            </ul>
-            <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
-                  class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
-          </div>
-          <!-- end price-box -->
-        </div>
-        <!-- end data-scroll -->
+      </ul>
+      <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
+            class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
+    </div>
+    {{--
+    <!-- end price-box --> --}}
+  </div>
+  {{--
+  <!-- end data-scroll --> --}}
+  </div> -->
+  {{--
+  <div class="col-xl-4 col-lg-6 col-md-6">
+    <div data-scroll data-scroll-speed="- 0.5">
+      <div class="price-box featured">
+        <h5>Concert <br> PASS</h5>
+        <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
+        <!-- end price -->
+        <ul>
+          <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
+          </li>
+          <li class="fa-active"><i class="far fa-times-circle"></i> Registrants cannot participate in other Events</li>
+          <li><i class="far fa-times-circle"></i> Individual Registeration for the concert</li>
+        </ul>
+        <a href="{{ route('register') }}" class="custom-button"> <span class="circle" aria-hidden="true"> <span
+              class="icon arrow"></span> </span> <span class="button-text">APPLY NOW</span></a>
       </div>
+      <!-- end price-box -->
+    </div>
+    <!-- end data-scroll -->
+  </div>
 
-    </div> --}}
-    <!-- end row -->
-    <!-- end container -->
+  </div> --}}
+  <!-- end row -->
+  <!-- end container -->
 </section>
 <section class="content-section">
   <span class="section-bg" data-background="{{ asset('frontend/images/section-bg05backup.jpg') }}" data-scroll
@@ -260,7 +265,7 @@
                   </div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Dance</h5>
+                    <h5>Inaugration</h5>
                     <p></p>
                   </div>
                 </div>
@@ -270,7 +275,7 @@
                   </div>
                   <!-- end event-time -->
                   <div class="event-description">
-                    <h5>Inaugration</h5>
+                    <h5>Dance</h5>
                     <p></p>
                   </div>
                 </div>
@@ -426,6 +431,85 @@
   </div>
   <!-- end container -->
 </section>
+<section class="content-section no-bottom-spacing">
+  <div class="section-bg" data-background="{{ asset('frontend/images/section-bg02.png') }}" data-scroll
+    data-scroll-speed="1"></div>
+  <!-- end section-bg -->
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-12">
+        <div data-scroll data-scroll-speed="0.5">
+          <div class="section-title text-center">
+            {{-- <figure><img src="{{ asset('frontend/images/logo2025.png') }}" alt="Image"></figure> --}}
+            <h6>SPONSORS AND PROMOTERS</h6>
+            <h2>Our Sponsors</h2>
+          </div>
+          <!-- end section-title -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-12 -->
+      <div class="col-12"> <strong class="sponsor-title">Gold Sponsors</strong> </div>
+      <!-- end col-12 -->
+      @foreach ($sponsors as $sponsor)
+      @if ($sponsor->site == 'GOLD SPONSOR')
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+          <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+            <figcaption>{{ $sponsor->name }}</figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      @endif
+      @endforeach
+      <div class="clearfix spacing-50"></div>
+      <!-- end clearfix -->
+      <div class="col-12"> <strong class="sponsor-title">Silver sponsors</strong> </div>
+
+      @foreach ($sponsors as $sponsor)
+      @if ($sponsor->site == 'SILVER SPONSOR')
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+          <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+            <figcaption>{{ $sponsor->name }}</figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      @endif
+      @endforeach
+      <!-- end col-2 -->
+     
+     
+      <div class="clearfix spacing-50"></div>
+      <!-- end clearfix -->
+      <div class="col-12"> <strong class="sponsor-title">Diamond sponsors</strong> </div>
+
+      @foreach ($sponsors as $sponsor)
+      @if ($sponsor->site == 'DIAMOND SPONSOR')
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+          <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+            <figcaption>{{ $sponsor->name }}</figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      @endif
+      @endforeach
+      <!-- end col-2 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
 <section class="content-section">
   <div class="section-bg" data-background="{{asset('frontend/images/section-bg01-alt.png')}}" data-scroll
     data-scroll-speed="1"></div>
@@ -449,7 +533,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/ajiet.png') }}" alt="Image">
-            <figcaption><a href="https://www.ajiet.edu.in/" target="_blank">A J Institute of Engineering and Technology</a></figcaption>
+            <figcaption><a href="https://www.ajiet.edu.in/" target="_blank">A J Institute of Engineering and
+                Technology</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -469,7 +554,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/2.png') }}" alt="Image">
-            <figcaption><a href="https://lmchm.in/" target="_blank">Laxmi Memorial college of Hotel Management</a></figcaption>
+            <figcaption><a href="https://lmchm.in/" target="_blank">Laxmi Memorial college of Hotel Management</a>
+            </figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -483,7 +569,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/3.png') }}" alt="Image">
-            <figcaption><a href="https://ajimmangalore.ac.in/" target="_blank">A J Institute of Management (MSc)</a></figcaption>
+            <figcaption><a href="https://ajimmangalore.ac.in/" target="_blank">A J Institute of Management (MSc)</a>
+            </figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -493,7 +580,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/4.png') }}" alt="Image">
-            <figcaption><a href="https://ajimmangalore.ac.in/" target="_blank">A J Institute of Management </a></figcaption>
+            <figcaption><a href="https://ajimmangalore.ac.in/" target="_blank">A J Institute of Management </a>
+            </figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -503,7 +591,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/5.png') }}" alt="Image">
-            <figcaption><a href="https://ajids.edu.in/WebPages/index.aspx" target="_blank">A J Institute of Dental Sciences</a></figcaption>
+            <figcaption><a href="https://ajids.edu.in/WebPages/index.aspx" target="_blank">A J Institute of Dental
+                Sciences</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -513,7 +602,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="-0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/6.png') }}" alt="Image">
-            <figcaption><a href="https://ajims.edu.in/Webpages/Index.aspx" target="_blank">A J Institute of Allied Health Science</a></figcaption>
+            <figcaption><a href="https://ajims.edu.in/Webpages/Index.aspx" target="_blank">A J Institute of Allied
+                Health Science</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
@@ -523,7 +613,8 @@
       <div class="col-lg-2 col-md-3 col-6">
         <div data-scroll data-scroll-speed="0.5">
           <figure class="sponsor-logo"> <img src="{{ asset('frontend/images/college/7.png') }}" alt="Image">
-            <figcaption><a href="https://ajims.edu.in/Webpages/Index.aspx" target="_blank">A J Institute of Management Medical Sciences</a></figcaption>
+            <figcaption><a href="https://ajims.edu.in/Webpages/Index.aspx" target="_blank">A J Institute of Management
+                Medical Sciences</a></figcaption>
           </figure>
           <!-- end sponsor-logo -->
         </div>
