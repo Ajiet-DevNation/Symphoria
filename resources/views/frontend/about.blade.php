@@ -289,7 +289,7 @@
         <div class="col-12"> <strong class="sponsor-title">Gold Sponsors</strong> </div>
         <!-- end col-12 -->
         @foreach ($sponsors as $sponsor)
-        @if ($sponsor->site == 'GOLD SPONSOR')
+        @if ($sponsor->site == 'GOLD SPONSOR' && $sponsor->img)
         <div class="col-lg-2 col-md-3 col-6">
           <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
             <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
@@ -307,7 +307,7 @@
         <div class="col-12"> <strong class="sponsor-title">Silver sponsors</strong> </div>
   
         @foreach ($sponsors as $sponsor)
-        @if ($sponsor->site == 'SILVER SPONSOR')
+        @if ($sponsor->site == 'SILVER SPONSOR' && $sponsor->img )
         <div class="col-lg-2 col-md-3 col-6">
           <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
             <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
@@ -328,7 +328,7 @@
         <div class="col-12"> <strong class="sponsor-title">Diamond sponsors</strong> </div>
   
         @foreach ($sponsors as $sponsor)
-        @if ($sponsor->site == 'DIAMOND SPONSOR')
+        @if ($sponsor->site == 'DIAMOND SPONSOR'  && $sponsor->img )
         <div class="col-lg-2 col-md-3 col-6">
           <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
             <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
