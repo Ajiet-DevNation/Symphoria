@@ -426,6 +426,146 @@
   </div>
   <!-- end container -->
 </section>
+<section class="content-section no-bottom-spacing">
+  <div class="section-bg" data-background="{{ asset('frontend/images/section-bg02.png') }}" data-scroll data-scroll-speed="1"></div>
+  <!-- end section-bg -->
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+       <div data-scroll data-scroll-speed="0.5">
+          <div class="section-title text-center">
+            {{-- <figure><img src="{{ asset('frontend/images/logo2025.png') }}" alt="Image"></figure> --}}
+            <h6>SPONSORS AND PROMOTERS</h6>
+              <h2>Our Sponsors</h2>
+          </div>
+          <!-- end section-title --> 
+            </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-12 -->
+        <div class="col-12"> <strong class="sponsor-title">Main sponsors</strong> </div>
+        <!-- end col-12 -->
+        <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo01.jpg" alt="Image">
+            <figcaption><a href="#">Qonk</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+      <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="images/logo02.jpg" alt="Image">
+            <figcaption><a href="#">Part Two</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+       </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+      <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo03.jpg" alt="Image">
+            <figcaption><a href="#">Happytality</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="clearfix spacing-50"></div>
+        <!-- end clearfix -->
+        <div class="col-12"> <strong class="sponsor-title">Product sponsors</strong> </div>
+        <!-- end col-12 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="images/logo04.jpg" alt="Image">
+            <figcaption><a href="#">Florida</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+       </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo05.jpg" alt="Image">
+            <figcaption><a href="#">Karat</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="images/logo06.jpg" alt="Image">
+            <figcaption><a href="#">Soma</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+      </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo07.jpg" alt="Image">
+            <figcaption><a href="#">Lota</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="images/logo08.jpg" alt="Image">
+            <figcaption><a href="#">Momo</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="clearfix"></div>
+        <!-- end clearfix -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo09.jpg" alt="Image">
+            <figcaption><a href="#">Fleer de Leew</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="0.5">
+          <figure class="sponsor-logo"> <img src="images/logo10.jpg" alt="Image">
+            <figcaption><a href="#">Armageddon</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 -->
+        <div class="col-lg-2 col-md-3 col-6">
+       <div data-scroll data-scroll-speed="-0.5">
+          <figure class="sponsor-logo"> <img src="images/logo11.jpg" alt="Image">
+            <figcaption><a href="#">Georgia</a></figcaption>
+          </figure>
+          <!-- end sponsor-logo --> 
+         </div>
+      <!-- end data-scroll -->
+        </div>
+        <!-- end col-2 --> 
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
 <section class="content-section">
   <div class="section-bg" data-background="{{asset('frontend/images/section-bg01-alt.png')}}" data-scroll
     data-scroll-speed="1"></div>
