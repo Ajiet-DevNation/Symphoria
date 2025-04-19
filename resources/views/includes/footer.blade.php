@@ -11,12 +11,6 @@
         </div>
       </div>
       
-      <div class="col-lg-3 ">
-        <div style="margin: 2rem" class="footer-widget">
-          <h6 class="widget-title">Email Us</h6>
-          <p>E-mail: <a href="mailto:symphoria@ajids.edu.in">symphoria@ajids.edu.in</a></p>
-        </div>
-      </div>
       <div class="col-lg-3">
         <div style="margin: 2rem" class="footer-widget">
           <h6 class="widget-title">Call Us</h6>
