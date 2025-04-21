@@ -67,7 +67,7 @@
       </div>
       <!-- end col-3 -->
       <!-- end col-3 -->
-      {{-- <div class="col-xl-3 col-lg-6 col-md-6">
+      <div class="col-xl-3 col-lg-6 col-md-6">
         <div data-scroll data-scroll-speed="0.5">
           <div class="price-box featured">
             <h5>Concert <br> PASS</h5>
@@ -87,7 +87,7 @@
           <!-- end price-box -->
         </div>
         <!-- end data-scroll -->
-      </div> --}}
+      </div>
       <!-- end col-3 -->
 
       <!-- <div class="col-xl-3 col-lg-6 col-md-6">
