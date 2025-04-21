@@ -28,6 +28,13 @@
                         <ul>
                             <li class="reg__info__description">Registrants can participate in concert only</li>
                             <li class="reg__info__description">Individual Registeration</li>
+                            <li class="reg__info__description">College bags or any form of goods are not allowed inside the venue</li>
+                            <li class="reg__info__description">Water, soft drinks or canned beverages are not allowed into the venue </li>
+                            <li class="reg__info__description">College ID card and Concert pass QR code is mandatory to enter the venue </li>
+                            <li class="reg__info__description">QR code once scanned will not be scanned again. Hence, once entered, one shall 
+                                not exit the venue until the concert ends </li>
+                            <li class="reg__info__description">Alcohol, cigarettes or any other form of substances are strictly prohibited. If caught in 
+                                any unethical activities by the concerned authorities, strict actions will be taken. </li>
                         </ul>
                         <li class="reg__info__title"><b>Events at Symphoria 2025</b></li>
                         <ul>
