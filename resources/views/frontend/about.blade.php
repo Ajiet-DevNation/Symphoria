@@ -285,6 +285,25 @@
           </div>
           <!-- end data-scroll -->
         </div>
+        <div class="col-12"> <strong class="sponsor-title">Diamond sponsors</strong> </div>
+
+      @foreach ($sponsors as $sponsor)
+      @if ($sponsor->site == 'DIAMOND SPONSOR'  && $sponsor->img )
+      <div class="col-lg-2 col-md-3 col-6">
+        <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
+          <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
+            <figcaption>{{ $sponsor->name }}</figcaption>
+          </figure>
+          <!-- end sponsor-logo -->
+        </div>
+        <!-- end data-scroll -->
+      </div>
+      <!-- end col-2 -->
+      @endif
+      @endforeach
+
+      
+      <div class="clearfix spacing-50"></div>
         <!-- end col-12 -->
         <div class="col-12"> <strong class="sponsor-title">Gold Sponsors</strong> </div>
         <!-- end col-12 -->
@@ -308,27 +327,6 @@
   
         @foreach ($sponsors as $sponsor)
         @if ($sponsor->site == 'SILVER SPONSOR' && $sponsor->img )
-        <div class="col-lg-2 col-md-3 col-6">
-          <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
-            <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
-              <figcaption>{{ $sponsor->name }}</figcaption>
-            </figure>
-            <!-- end sponsor-logo -->
-          </div>
-          <!-- end data-scroll -->
-        </div>
-        <!-- end col-2 -->
-        @endif
-        @endforeach
-        <!-- end col-2 -->
-       
-       
-        <div class="clearfix spacing-50"></div>
-        <!-- end clearfix -->
-        <div class="col-12"> <strong class="sponsor-title">Diamond sponsors</strong> </div>
-  
-        @foreach ($sponsors as $sponsor)
-        @if ($sponsor->site == 'DIAMOND SPONSOR'  && $sponsor->img )
         <div class="col-lg-2 col-md-3 col-6">
           <div data-scroll data-scroll-speed="{{ $loop->even ? '0.5' : '-0.5' }}">
             <figure class="sponsor-logo"> <img src="{{ Storage::disk('s3')->url($sponsor->img) }}" alt="Image">
