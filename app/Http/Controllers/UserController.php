@@ -49,7 +49,7 @@ class UserController extends Controller
      */
     public function store(UserStoreRequest $request)
     {
-        dd($request->all());
+        // dd($request->all());
         $this->authorize('create', User::class);
 
         $validated = $request->validated();
