@@ -30,11 +30,11 @@ use Illuminate\Support\Facades\Hash;
 Route::get('/', function () {
     $sponsors = Sponser::all();
 
-    $user = \App\Models\User::whereEmail('admin@admin.com')->first();
-    $user->update([
-        'password' => Hash::make('admin'),
-    ]);
-    dd($user);
+    // $user = \App\Models\User::whereEmail('admin@admin.com')->first();
+    // $user->update([
+    //     'password' => Hash::make('admin'),
+    // ]);
+    // dd($user);
     // dd($sponsors);
     return view('frontend.index', compact('sponsors'));
 })->name('index');
