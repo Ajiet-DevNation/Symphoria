@@ -14,6 +14,7 @@ use App\Http\Controllers\EventRegistrationController;
 use App\Http\Controllers\EventOrganizerController;
 use App\Http\Controllers\MainOrganizerController;
 use App\Models\Sponser;
+use Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,11 @@ use App\Models\Sponser;
 Route::get('/', function () {
     $sponsors = Sponser::all();
 
+    $user = \App\Models\User::whereEmail('admin@admin.com')->first();
+    $user->update([
+        'password' => Hash::make('admin'),
+    ]);
+    dd($user);
     // dd($sponsors);
     return view('frontend.index', compact('sponsors'));
 })->name('index');
