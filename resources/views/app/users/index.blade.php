@@ -107,7 +107,7 @@
                                     src="{{ $user->id_card ? \Storage::url($user->id_card) : '' }}"
                                 />
                             </td> --}}
-                            <td>{{ $user->is_paid ?? '-' }}</td>
+                            <td>{{ $user->is_paid ? "yes" : "no" }}</td>
                             <td class="text-center" style="width: 134px;">
                                 <div
                                     role="group"
