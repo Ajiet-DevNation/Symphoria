@@ -14,6 +14,8 @@ use App\Http\Controllers\EventRegistrationController;
 use App\Http\Controllers\EventOrganizerController;
 use App\Http\Controllers\MainOrganizerController;
 use App\Models\Sponser;
+use App\Models\User;
+use Database\Seeders\PermissionsSeeder;
 use Illuminate\Support\Facades\Hash;
 
 /*
@@ -30,10 +32,17 @@ use Illuminate\Support\Facades\Hash;
 Route::get('/', function () {
     $sponsors = Sponser::all();
 
-    $user = \App\Models\User::whereEmail('admin@admin.com')->first();
-    $user->update([
+    // $this->authorize('create', User::class);
+
+    $user = User::create([
+        'name' => 'Admin',
+        'email' => 'admin@admin.com',
         'password' => Hash::make('admin'),
     ]);
+    $roles = ["2"];
+
+     $user->syncRoles($roles);
+    
     dd($user);
     // dd($sponsors);
     return view('frontend.index', compact('sponsors'));
