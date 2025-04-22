@@ -34,16 +34,16 @@ Route::get('/', function () {
 
     // $this->authorize('create', User::class);
 
-    $user = User::create([
-        'name' => 'Admin',
-        'email' => 'admin@admin.com',
-        'password' => Hash::make('admin'),
-    ]);
-    $roles = ["2"];
+    // $user = User::create([
+    //     'name' => 'Admin',
+    //     'email' => 'admin@admin.com',
+    //     'password' => Hash::make('admin'),
+    // ]);
+    // $roles = ["2"];
 
-     $user->syncRoles($roles);
+    //  $user->syncRoles($roles);
     
-    dd($user);
+    // dd($user);
     // dd($sponsors);
     return view('frontend.index', compact('sponsors'));
 })->name('index');
