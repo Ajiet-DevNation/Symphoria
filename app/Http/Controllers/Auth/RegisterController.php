@@ -61,8 +61,7 @@ class RegisterController extends Controller
             'usn' => ['required', 'max:255', 'unique:users'],
             'phone' => ['required', 'max:255'],
             'college_name' => ['required'],
-            'transaction_id' => ['nullable', 'unique:users'],
-
+            'transaction_id' => ['required', 'unique:users'],
             'payment_screenshot' => ['required']
         ]);
     }
