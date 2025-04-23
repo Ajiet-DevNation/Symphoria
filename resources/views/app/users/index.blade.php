@@ -88,6 +88,8 @@
                     </thead>
                     <tbody>
                         @forelse($users as $user)
+                        @if (!$user->hasRole('super-admin'))
+                            admin
                         <tr>
                             <td>{{ $user->name ?? '-' }}</td>
                             <td>{{ $user->email ?? '-' }}</td>
@@ -150,6 +152,7 @@
                                 </div>
                             </td>
                         </tr>
+                        @endif
                         @empty
                         <tr>
                             <td colspan="12">

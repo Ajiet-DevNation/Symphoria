@@ -31,20 +31,7 @@ use Illuminate\Support\Facades\Hash;
 
 Route::get('/', function () {
     $sponsors = Sponser::all();
-
-    // $this->authorize('create', User::class);
-
-    // $user = User::create([
-    //     'name' => 'Admin',
-    //     'email' => 'admin@admin.com',
-    //     'password' => Hash::make('admin'),
-    // ]);
-    // $roles = ["2"];
-
-    //  $user->syncRoles($roles);
     
-    // dd($user);
-    // dd($sponsors);
     return view('frontend.index', compact('sponsors'));
 })->name('index');
 
