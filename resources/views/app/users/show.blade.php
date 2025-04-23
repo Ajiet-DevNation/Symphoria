@@ -46,10 +46,12 @@
                 </div>
                 <div class="mb-4">
                     <h5>@lang('crud.users.inputs.payment_screenshot')</h5>
-                    <x-partials.thumbnail
+                    <a href="{{ $user->payment_screenshot ? \Storage::disk('s3')->url($user->payment_screenshot) : '' }}" target="_blank">
+                        <x-partials.thumbnail
                         src="{{ $user->payment_screenshot ? \Storage::disk('s3')->url($user->payment_screenshot) : '' }}"
                         size="150"
-                    />
+                        />
+                    </a>
                 </div>
                 {{-- <div class="mb-4">
                     <h5>@lang('crud.users.inputs.id_card')</h5>
