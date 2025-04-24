@@ -202,7 +202,7 @@
                                     <h3 class="scan-sub-heading">AND</h3>
                                     <h1 class="scan-heading">PAY</h1>
                                     <h1 class="scan-heading pay-2500">₹2500</h1>
-                                    <h1 class="scan-heading pay-150">₹250</h1>
+                                    <h1 class="scan-heading pay-150">₹150</h1>
                                     {{-- <h1 class="scan-heading pay-300">₹5500</h1> --}}
 
 
