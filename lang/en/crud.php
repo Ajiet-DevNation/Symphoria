@@ -88,6 +88,7 @@ return [
         'edit_title' => 'Edit User',
         'show_title' => 'Show User',
         'inputs' => [
+            'id' => 'Id',
             'name' => 'Name',
             'email' => 'Email',
             'password' => 'Password',
