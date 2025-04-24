@@ -49,6 +49,9 @@
                     <thead>
                         <tr>
                             <th class="text-left">
+                                @lang('crud.users.inputs.id')
+                            </th>
+                            <th class="text-left">
                                 @lang('crud.users.inputs.name')
                             </th>
                             <th class="text-left">
@@ -89,8 +92,8 @@
                     <tbody>
                         @forelse($users as $user)
                         @if (!$user->hasRole('super-admin'))
-                            admin
                         <tr>
+                            <td>{{ $user->id ?? '-' }}</td>
                             <td>{{ $user->name ?? '-' }}</td>
                             <td>{{ $user->email ?? '-' }}</td>
                             <td>{{ $user->phone ?? '-' }}</td>
