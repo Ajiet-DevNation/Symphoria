@@ -71,7 +71,7 @@
         <div data-scroll data-scroll-speed="0.5">
           <div class="price-box featured">
             <h5>Concert <br> PASS</h5>
-            <div class="price"> <span class="currency">₹</span> <span class="value">250</span></div>
+            <div class="price"> <span class="currency">₹</span> <span class="value">150</span></div>
             <!-- end price -->
             <ul>
               <li class="active"> <i class="far fa-check-circle"></i> Registrants can only attend concert.
