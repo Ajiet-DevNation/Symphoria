@@ -128,8 +128,14 @@ class ConcertEntryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, ConcertEntry $concert_entry)
     {
-        //
+        $this->authorize('delete', $concert_entry);
+
+        $concert_entry->delete();
+
+        return redirect()
+            ->route('concert-entries.index')
+            ->withSuccess(__('crud.common.removed'));
     }
 }
