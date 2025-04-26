@@ -63,9 +63,9 @@
                             <th class="text-left">
                                 @lang('crud.users.inputs.pass_type')
                             </th>
-                            <th class="text-left">
+                            {{-- <th class="text-left">
                                 @lang('crud.users.inputs.usn')
-                            </th>
+                            </th> --}}
                             {{-- <th class="text-left">
                                 @lang('crud.users.inputs.uid')
                             </th> --}}
@@ -98,7 +98,7 @@
                             <td>{{ $user->email ?? '-' }}</td>
                             <td>{{ $user->phone ?? '-' }}</td>
                             <td>{{ $user->pass_type ?? '-' }}</td>
-                            <td>{{ $user->usn ?? '-' }}</td>
+                            {{-- <td>{{ $user->usn ?? '-' }}</td> --}}
                             {{-- <td>{{ $user->uid ?? '-' }}</td> --}}
                             <td>{{ $user->transaction_id ?? '-' }}</td>
                             <td>{{ $user->college_name ?? '-' }}</td>
